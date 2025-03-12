@@ -65,7 +65,7 @@ public class BaseClass {
 			scUT = new ScreenshotUtils();
 			scUT.capture_Screenshot_failures(driver, itestResult.getName());
 		}else if(driver != null) {
-			driver.close();
+			driver.quit();
 			logger.info("Browser closed successfully.");
 		}
 		

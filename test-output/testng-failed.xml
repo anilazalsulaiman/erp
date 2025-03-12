@@ -6,14 +6,14 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testcases.Loginpage_TC">
+      <class name="testcases.Headermenu_TC">
         <methods>
-          <include name="Validate_dashboardURL_afterLogin"/>
+          <include name="verify_redirection_AND_LandingPageValue_MyReferral_ReferralProgram"/>
           <include name="afterMethod"/>
           <include name="perform_loginFor_QAaccount_allAccess"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- testcases.Loginpage_TC -->
+      </class> <!-- testcases.Headermenu_TC -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

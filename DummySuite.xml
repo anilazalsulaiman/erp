@@ -6,8 +6,10 @@
     	<listener class-name="utils.ExtentReport"/>
 	</listeners>
   <test name="Test">
+	  
     <classes>
-      <class name="testcases.Loginpage_TC"/>
+		<class name="testcases.Headermenu_TC"/>
     </classes>
+    
   </test> <!-- Test -->
 </suite> <!-- Suite -->

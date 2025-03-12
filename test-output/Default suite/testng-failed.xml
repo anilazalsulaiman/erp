@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.Loginpage_TC">
+      <class name="testcases.Headermenu_TC">
         <methods>
-          <include name="Validate_dashboardURL_afterLogin"/>
           <include name="afterMethod"/>
+          <include name="Validate_dashboardURL_afterLogin"/>
           <include name="perform_loginFor_QAaccount_allAccess"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- testcases.Loginpage_TC -->
+      </class> <!-- testcases.Headermenu_TC -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

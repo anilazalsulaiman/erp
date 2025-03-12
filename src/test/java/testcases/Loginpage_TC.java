@@ -11,6 +11,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import base.BaseClass;
+import constants.Constants;
 import pageObjects.loginPage.LoginPage_PG;
 import utils.ExcelReadUtils;
 
@@ -24,18 +25,18 @@ public class Loginpage_TC extends BaseClass{
 		lp.visibility_ofElement_in_Dashboard();
 	}
 	
-  @Test(enabled=false)
-  public void f() {
+  @Test(enabled=true)
+  public void print_url() {
 	  String pageTitle = driver.getTitle();
 	  System.out.println("Page Title: " + pageTitle);
 	  
   }
   
-  @Test(enabled=false)
+  @Test(enabled=true)
   public void Validate_dashboardElement_afterLogin() throws IOException {
 	  String actual=lp.getElement_textValue_in_Dashboard();
 	  String expected="VIEW PROFILE";
-	  Assert.assertEquals(actual, expected, "NOT MATCHING");
+	  Assert.assertEquals(actual, expected, Constants.assert_ErrorMessage);
   }
   
   @Test
@@ -43,7 +44,7 @@ public class Loginpage_TC extends BaseClass{
 	  String actual=lp.get_Dashboard_URL();
 	  //String expected="https://ytr.insemitech.com/dashboard/home/";
 	  String expected = prop.getProperty("HomepageURL") + "dashboard/home/";
-	  Assert.assertEquals(actual, expected, "Dashboard URL does not match!");
+	  Assert.assertEquals(actual, expected, Constants.assert_ErrorMessage);
   }
   
   
