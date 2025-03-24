@@ -350,7 +350,7 @@ public class Headermenu_TC extends BaseClass {
 	}
 
 // GOALS AND REVIEWS
-	@Test(enabled = false, priority = 4)
+	@Test(enabled = false, priority = 5)
 	public void mouseHover_Header_Apps_visibilityCheck_of_GandR() {
 		String actual = hm.getValue_of__header_apps_GandR();
 		String expected = "Goals and Reviews";
@@ -400,18 +400,18 @@ public class Headermenu_TC extends BaseClass {
 		}
 	}
 
-	 @Test(enabled = false, dependsOnMethods ="mouseHover_Header_Apps_visibilityCheck_of_GandR")
-	//@Test(enabled = true)
+	@Test(enabled = false, dependsOnMethods = "mouseHover_Header_Apps_visibilityCheck_of_GandR")
+	// @Test(enabled = true)
 	public void verify_redirection_AND_LandingPageValue_GandR_RatingPending() {
 		SoftAssert softAssert = new SoftAssert();
 		try {
 			String actualText = hm.get_LandingPageValue_GandR_RatingPending_BeforeAfterInitiation();
 			String expectedTextBefore = Constants.verify_redirection_AND_LandingPageValue_GandR_RatingPending_expectedTextBefore;
-	        String expectedTextAfter = Constants.verify_redirection_AND_LandingPageValue_GandR_RatingPending_expectedTextAfter;
+			String expectedTextAfter = Constants.verify_redirection_AND_LandingPageValue_GandR_RatingPending_expectedTextAfter;
 			if (actualText.equals(expectedTextBefore) || actualText.equals(expectedTextAfter)) {
-	            softAssert.assertTrue(true, "Valid Page Text Found: " + actualText);
-	        }else {
-				 softAssert.fail("Unexpected page Text: " + actualText);
+				softAssert.assertTrue(true, "Valid Page Text Found: " + actualText);
+			} else {
+				softAssert.fail("Unexpected page Text: " + actualText);
 			}
 
 			String actualURL = driver.getCurrentUrl();
@@ -423,7 +423,8 @@ public class Headermenu_TC extends BaseClass {
 			throw e;
 		}
 	}
-	@Test(enabled = false, dependsOnMethods ="mouseHover_Header_Apps_visibilityCheck_of_GandR")
+
+	@Test(enabled = false, dependsOnMethods = "mouseHover_Header_Apps_visibilityCheck_of_GandR")
 //	@Test(enabled = true)
 	public void verify_redirection_AND_LandingPageValue_GandR_AddCustomGoals() {
 		SoftAssert softAssert = new SoftAssert();
@@ -431,7 +432,6 @@ public class Headermenu_TC extends BaseClass {
 			String actualText = hm.get_LandingPageValue_GandR_AddCustomGoals();
 			String expectedText = Constants.verify_redirection_AND_LandingPageValue_GandR_AddCustomGoals;
 			softAssert.assertEquals(actualText, expectedText, Constants.assert_ErrorMessage);
-			
 
 			String actualURL = driver.getCurrentUrl();
 			String expectedURL = prop.getProperty("HomepageURL") + "apps/GandR/customgoals/";
@@ -442,8 +442,8 @@ public class Headermenu_TC extends BaseClass {
 			throw e;
 		}
 	}
-	
-	@Test(enabled = false, priority = 5)
+
+	@Test(enabled = false, priority = 6)
 	public void mouseHover_Header_Apps_visibilityCheck_of_MyReferral() {
 		String actual = hm.getValue_of__header_apps_MyReferral();
 		String expected = Constants.mouseHover_Header_Apps_visibilityCheck_of_MyReferral;
@@ -454,24 +454,570 @@ public class Headermenu_TC extends BaseClass {
 			throw e;
 		}
 	}
-	//@Test(enabled = false, dependsOnMethods ="mouseHover_Header_Apps_visibilityCheck_of_MyReferral")
-	@Test(enabled = true)
+
+	@Test(enabled = false, dependsOnMethods = "mouseHover_Header_Apps_visibilityCheck_of_MyReferral")
+//	@Test(enabled = true)
 	public void verify_redirection_AND_LandingPageValue_MyReferral_ReferralProgram() {
 		SoftAssert softAssert = new SoftAssert();
 		try {
-			String actualText = hm.get_LandingPageValue_GandR_ReferralProgram();
+			String actualText = hm.get_LandingPageValue_MyReferral_ReferralProgram();
 			String expectedText = Constants.verify_redirection_AND_LandingPageValue_MyReferral_ReferralProgram;
 			softAssert.assertEquals(actualText, expectedText, Constants.assert_ErrorMessage);
-			
 
-//			String actualURL = driver.getCurrentUrl();
-//			String expectedURL = prop.getProperty("HomepageURL") + "apps/referralProgram/employeeReferralProgram/";
-//			softAssert.assertEquals(actualURL, expectedURL, Constants.assert_URL_Match_ErrorMessage);
-//			softAssert.assertAll();
+			String actualURL = driver.getCurrentUrl();
+			String expectedURL = prop.getProperty("HomepageURL") + "apps/referralProgram/employeeReferralProgram/";
+			softAssert.assertEquals(actualURL, expectedURL, Constants.assert_URL_Match_ErrorMessage);
+			softAssert.assertAll();
 		} catch (AssertionError e) {
 			System.err.println("Assertion Error: " + e.getMessage());
 			throw e;
 		}
 	}
 
+	@Test(enabled = false, dependsOnMethods = "mouseHover_Header_Apps_visibilityCheck_of_MyReferral")
+//		@Test(enabled = true)
+	public void verify_redirection_AND_LandingPageValue_MyReferral_ReferredList() {
+		SoftAssert softAssert = new SoftAssert();
+		try {
+			String actualText = hm.get_LandingPageValue_MyReferral_ReferredList();
+			String expectedText = Constants.verify_redirection_AND_LandingPageValue_MyReferral_ReferredList;
+			softAssert.assertEquals(actualText, expectedText, Constants.assert_ErrorMessage);
+
+			String actualURL = driver.getCurrentUrl();
+			String expectedURL = prop.getProperty("HomepageURL") + "apps/referralProgram/referredResumes/";
+			softAssert.assertEquals(actualURL, expectedURL, Constants.assert_URL_Match_ErrorMessage);
+			softAssert.assertAll();
+		} catch (AssertionError e) {
+			System.err.println("Assertion Error: " + e.getMessage());
+			throw e;
+		}
+	}
+
+//HELPDESK
+	@Test(enabled = false, priority = 6)
+	public void mouseHover_Header_Apps_visibilityCheck_of_Helpdesk() {
+		String actual = hm.getValue_of__header_apps_Helpdesk();
+		String expected = Constants.mouseHover_Header_Apps_visibilityCheck_of_Helpdesk;
+		try {
+			Assert.assertEquals(actual, expected, Constants.assert_ErrorMessage);
+		} catch (AssertionError e) {
+			System.out.println("Assertion Failed! " + e.getMessage());
+			throw e;
+		}
+	}
+
+	@Test(enabled = false, dependsOnMethods = "mouseHover_Header_Apps_visibilityCheck_of_Helpdesk")
+	// @Test(enabled = true)
+	public void verify_redirection_AND_LandingPageValue_Helpdesk() {
+		SoftAssert softAssert = new SoftAssert();
+		try {
+			String actualText = hm.get_LandingPageValue_Helpdesk();
+			String expectedText = Constants.verify_redirection_AND_LandingPageValue_Helpdesk;
+			softAssert.assertEquals(actualText, expectedText, Constants.assert_ErrorMessage);
+
+			String actualURL = driver.getCurrentUrl();
+			String expectedURL = prop.getProperty("HomepageURL") + "apps/helpdesk/";
+			softAssert.assertEquals(actualURL, expectedURL, Constants.assert_URL_Match_ErrorMessage);
+			softAssert.assertAll();
+		} catch (AssertionError e) {
+			System.err.println("Assertion Error: " + e.getMessage());
+			throw e;
+		}
+	}
+
+//EMS
+	@Test(enabled = false, priority = 7)
+	public void mouseHover_Header_Apps_visibilityCheck_of_EMS() {
+		String actual = hm.getValue_of_header_apps_EMS();
+		String expected = Constants.mouseHover_Header_Apps_visibilityCheck_of_EMS;
+		try {
+			Assert.assertEquals(actual, expected, Constants.assert_ErrorMessage);
+		} catch (AssertionError e) {
+			System.out.println("Assertion Failed! " + e.getMessage());
+			throw e;
+		}
+	}
+
+	@Test(enabled = false, dependsOnMethods = "mouseHover_Header_Apps_visibilityCheck_of_EMS")
+//	 @Test(enabled = true)
+	public void verify_redirection_AND_LandingPageValue_EMS_resignationList() {
+		SoftAssert softAssert = new SoftAssert();
+		try {
+			String actualText = hm.get_LandingPageValue_EMS_resignationList();
+			String expectedText = Constants.verify_redirection_AND_LandingPageValue_EMS_commonTable_value;
+			softAssert.assertEquals(actualText, expectedText, Constants.assert_ErrorMessage);
+
+			String actualURL = driver.getCurrentUrl();
+			String expectedURL = prop.getProperty("HomepageURL") + "apps/ems/resignationList/";
+			softAssert.assertEquals(actualURL, expectedURL, Constants.assert_URL_Match_ErrorMessage);
+			softAssert.assertAll();
+		} catch (AssertionError e) {
+			System.err.println("Assertion Error: " + e.getMessage());
+			throw e;
+		}
+	}
+
+	@Test(enabled = false, dependsOnMethods = "mouseHover_Header_Apps_visibilityCheck_of_EMS")
+//	 @Test(enabled = true)
+	public void verify_redirection_AND_LandingPageValue_EMS_LwdRequestList() {
+		SoftAssert softAssert = new SoftAssert();
+		try {
+			String actualText = hm.get_LandingPageValue_EMS_LwdRequestList();
+			String expectedText = Constants.verify_redirection_AND_LandingPageValue_EMS_commonTable_value;
+			softAssert.assertEquals(actualText, expectedText, Constants.assert_ErrorMessage);
+
+			String actualURL = driver.getCurrentUrl();
+			String expectedURL = prop.getProperty("HomepageURL") + "apps/ems/lwdRequestList/";
+			softAssert.assertEquals(actualURL, expectedURL, Constants.assert_URL_Match_ErrorMessage);
+			softAssert.assertAll();
+		} catch (AssertionError e) {
+			System.err.println("Assertion Error: " + e.getMessage());
+			throw e;
+		}
+	}
+
+	@Test(enabled = false, dependsOnMethods = "mouseHover_Header_Apps_visibilityCheck_of_EMS")
+	// @Test(enabled = true)
+	public void verify_redirection_AND_LandingPageValue_EMS_RelievingClearance() {
+		SoftAssert softAssert = new SoftAssert();
+		try {
+			String actualText = hm.get_LandingPageValue_EMS_RelievingClearance();
+			String expectedText = Constants.verify_redirection_AND_LandingPageValue_EMS_commonTable_value;
+			softAssert.assertEquals(actualText, expectedText, Constants.assert_ErrorMessage);
+
+			String actualURL = driver.getCurrentUrl();
+			String expectedURL = prop.getProperty("HomepageURL") + "apps/ems/relievingclearance/";
+			softAssert.assertEquals(actualURL, expectedURL, Constants.assert_URL_Match_ErrorMessage);
+			softAssert.assertAll();
+		} catch (AssertionError e) {
+			System.err.println("Assertion Error: " + e.getMessage());
+			throw e;
+		}
+	}
+
+	 @Test(enabled = false, dependsOnMethods = "mouseHover_Header_Apps_visibilityCheck_of_EMS")
+//	@Test(enabled = true)
+	public void verify_redirection_AND_LandingPageValue_EMS_LetterApproval() {
+		SoftAssert softAssert = new SoftAssert();
+		try {
+			String actualText = hm.get_LandingPageValue_EMS_LetterApproval();
+			String expectedText = Constants.verify_redirection_AND_LandingPageValue_EMS_commonTable_value;
+			softAssert.assertEquals(actualText, expectedText, Constants.assert_ErrorMessage);
+
+			String actualURL = driver.getCurrentUrl();
+			String expectedURL = prop.getProperty("HomepageURL") + "apps/ems/letterApproval/";
+			softAssert.assertEquals(actualURL, expectedURL, Constants.assert_URL_Match_ErrorMessage);
+			softAssert.assertAll();
+		} catch (AssertionError e) {
+			System.err.println("Assertion Error: " + e.getMessage());
+			throw e;
+		}
+	}
+
+	 @Test(enabled = false, dependsOnMethods = "mouseHover_Header_Apps_visibilityCheck_of_EMS")
+//		@Test(enabled = true)
+		public void verify_redirection_AND_LandingPageValue_EMS_ClearanceAssignment() {
+			SoftAssert softAssert = new SoftAssert();
+			try {
+				String actualText = hm.get_LandingPageValue_EMS_ClearanceAssignment();
+				String expectedText = Constants.verify_redirection_AND_LandingPageValue_EMS_ClearanceAssignment;
+				softAssert.assertEquals(actualText, expectedText, Constants.assert_ErrorMessage);
+
+				String actualURL = driver.getCurrentUrl();
+				String expectedURL = prop.getProperty("HomepageURL") + "apps/ems/clearanceAssignment/";
+				softAssert.assertEquals(actualURL, expectedURL, Constants.assert_URL_Match_ErrorMessage);
+				softAssert.assertAll();
+			} catch (AssertionError e) {
+				System.err.println("Assertion Error: " + e.getMessage());
+				throw e;
+			}
+		}
+		@Test(enabled = false, dependsOnMethods = "mouseHover_Header_Apps_visibilityCheck_of_EMS")
+//		@Test(enabled = true)
+		public void verify_redirection_AND_LandingPageValue_EMS_ResignationbehalfEmp() {
+			SoftAssert softAssert = new SoftAssert();
+			try {
+				String actualText = hm.get_LandingPageValue_EMS_ResignationbehalfEmp();
+				String expectedText = Constants.verify_redirection_AND_LandingPageValue_EMS_ResignationbehalfEmp;
+				softAssert.assertEquals(actualText, expectedText, Constants.assert_ErrorMessage);
+
+				String actualURL = driver.getCurrentUrl();
+				String expectedURL = prop.getProperty("HomepageURL") + "apps/ems/resignationBehalfEmployee/";
+				softAssert.assertEquals(actualURL, expectedURL, Constants.assert_URL_Match_ErrorMessage);
+				softAssert.assertAll();
+			} catch (AssertionError e) {
+				System.err.println("Assertion Error: " + e.getMessage());
+				throw e;
+			}
+		}
+		
+		@Test(enabled = false, dependsOnMethods = "mouseHover_Header_Apps_visibilityCheck_of_EMS")
+//		@Test(enabled = true)
+		public void verify_redirection_AND_LandingPageValue_EMS_Termination() {
+			SoftAssert softAssert = new SoftAssert();
+			try {
+				String actualText = hm.get_LandingPageValue_EMS_Termination();
+				String expectedText = Constants.verify_redirection_AND_LandingPageValue_EMS_Termination;
+				softAssert.assertEquals(actualText, expectedText, Constants.assert_ErrorMessage);
+
+				String actualURL = driver.getCurrentUrl();
+				String expectedURL = prop.getProperty("HomepageURL") + "apps/ems/terminationRequest/";
+				softAssert.assertEquals(actualURL, expectedURL, Constants.assert_URL_Match_ErrorMessage);
+				softAssert.assertAll();
+			} catch (AssertionError e) {
+				System.err.println("Assertion Error: " + e.getMessage());
+				throw e;
+			}
+		}
+		
+		@Test(enabled = false, dependsOnMethods = "mouseHover_Header_Apps_visibilityCheck_of_EMS")
+//		@Test(enabled = true)
+		public void verify_redirection_AND_LandingPageValue_EMS_TerminationList() {
+			SoftAssert softAssert = new SoftAssert();
+			try {
+				String actualText = hm.get_LandingPageValue_EMS_TerminationList();
+				String expectedText = Constants.verify_redirection_AND_LandingPageValue_EMS_commonTable_value;
+				softAssert.assertEquals(actualText, expectedText, Constants.assert_ErrorMessage);
+
+				String actualURL = driver.getCurrentUrl();
+				String expectedURL = prop.getProperty("HomepageURL") + "apps/ems/terminationRequestList/";
+				softAssert.assertEquals(actualURL, expectedURL, Constants.assert_URL_Match_ErrorMessage);
+				softAssert.assertAll();
+			} catch (AssertionError e) {
+				System.err.println("Assertion Error: " + e.getMessage());
+				throw e;
+			}
+		}
+		@Test(enabled = false, dependsOnMethods = "mouseHover_Header_Apps_visibilityCheck_of_EMS")
+//		@Test(enabled = true)
+		public void verify_redirection_AND_LandingPageValue_EMS_Resignation() throws Exception {
+			SoftAssert softAssert = new SoftAssert();
+			try {
+				String actualText = hm.get_LandingPageValue_EMS_Resignation();
+				String expectedText1 = Constants.verify_redirection_AND_LandingPageValue_EMS_Resignation_text1;
+				String expectedText2 = Constants.verify_redirection_AND_LandingPageValue_EMS_Resignation_text2;
+				String expectedText3 = Constants.verify_redirection_AND_LandingPageValue_EMS_Resignation_text3;
+				
+				if(actualText.equals(expectedText1) || actualText.equals(expectedText2) || actualText.equals(expectedText3)) {
+					softAssert.assertTrue(true, "Valid Page Text Found: " + actualText);
+				} else {
+					softAssert.fail("Unexpected page Text: " + actualText);
+				}
+
+				String actualURL = driver.getCurrentUrl();
+				String expectedURL = prop.getProperty("HomepageURL") + "apps/ems/resignation/";
+				softAssert.assertEquals(actualURL, expectedURL, Constants.assert_URL_Match_ErrorMessage);
+				softAssert.assertAll();
+			} catch (AssertionError e) {
+				System.err.println("Assertion Error: " + e.getMessage());
+				throw e;
+			}
+		}
+		
+//USERS
+		@Test(enabled = false, priority = 8)
+		public void mouseHover_Header_Apps_visibilityCheck_of_Users() {
+			String actual = hm.getValue_of_header_apps_Users();
+			String expected = Constants.mouseHover_Header_Apps_visibilityCheck_of_Users;
+			try {
+				Assert.assertEquals(actual, expected, Constants.assert_ErrorMessage);
+			} catch (AssertionError e) {
+				System.out.println("Assertion Failed! " + e.getMessage());
+				throw e;
+			}
+		}	
+		@Test(enabled = false, dependsOnMethods = "mouseHover_Header_Apps_visibilityCheck_of_Users")
+//		@Test(enabled = true)
+		public void verify_redirection_AND_LandingPageValue_Users_UsersList() {
+			SoftAssert softAssert = new SoftAssert();
+			try {
+				String actualText = hm.get_LandingPageValue_Users_UsersList();
+				String expectedText = Constants.verify_redirection_AND_LandingPageValue_Users_UsersList;
+				softAssert.assertEquals(actualText, expectedText, Constants.assert_ErrorMessage);
+
+				String actualURL = driver.getCurrentUrl();
+				String expectedURL = prop.getProperty("HomepageURL") + "apps/user/list/";
+				softAssert.assertEquals(actualURL, expectedURL, Constants.assert_URL_Match_ErrorMessage);
+				softAssert.assertAll();
+			} catch (AssertionError e) {
+				System.err.println("Assertion Error: " + e.getMessage());
+				throw e;
+			}
+		}
+
+// HIRING - HR ADMIN
+
+		@Test(enabled = false, priority = 9)
+		public void mouseHover_Header_Apps_visibilityCheck_of_HrAdmin() {
+			String actual = hm.getValue_of_header_apps_HrAdmin();
+			String expected = Constants.mouseHover_Header_Apps_visibilityCheck_of_HrAdmin;
+			try {
+				Assert.assertEquals(actual, expected, Constants.assert_ErrorMessage);
+			} catch (AssertionError e) {
+				System.out.println("Assertion Failed! " + e.getMessage());
+				throw e;
+			}
+		}
+		
+		@Test(enabled = false, dependsOnMethods = "mouseHover_Header_Apps_visibilityCheck_of_HrAdmin")
+//		@Test(enabled = true)
+		public void verify_redirection_AND_LandingPageValue_HrAdmin_Jobs() {
+			SoftAssert softAssert = new SoftAssert();
+			try {
+				String actualText = hm.get_LandingPageValue_HrAdmin_Jobs();
+				String expectedText = Constants.verify_redirection_AND_LandingPageValue_HrAdmin_Jobs;
+				softAssert.assertEquals(actualText, expectedText, Constants.assert_ErrorMessage);
+
+				String actualURL = driver.getCurrentUrl();
+				String expectedURL = prop.getProperty("HomepageURL") + "apps/recruitment/hrAdminJobs/";
+				softAssert.assertEquals(actualURL, expectedURL, Constants.assert_URL_Match_ErrorMessage);
+				softAssert.assertAll();
+			} catch (AssertionError e) {
+				System.err.println("Assertion Error: " + e.getMessage());
+				throw e;
+			}
+		}
+		@Test(enabled = false, dependsOnMethods = "mouseHover_Header_Apps_visibilityCheck_of_HrAdmin")
+//		@Test(enabled = true)
+		public void verify_redirection_AND_LandingPageValue_HrAdmin_Candidates() {
+			SoftAssert softAssert = new SoftAssert();
+			try {
+				String actualText = hm.get_LandingPageValue_HrAdmin_Candidates();
+				String expectedText = Constants.verify_redirection_AND_LandingPageValue_HrAdmin_Candidates;
+				softAssert.assertEquals(actualText, expectedText, Constants.assert_ErrorMessage);
+
+				String actualURL = driver.getCurrentUrl();
+				String expectedURL = prop.getProperty("HomepageURL") + "apps/recruitment/allCandidatesList/";
+				softAssert.assertEquals(actualURL, expectedURL, Constants.assert_URL_Match_ErrorMessage);
+				softAssert.assertAll();
+			} catch (AssertionError e) {
+				System.err.println("Assertion Error: " + e.getMessage());
+				throw e;
+			}
+		}
+		@Test(enabled = false, dependsOnMethods = "mouseHover_Header_Apps_visibilityCheck_of_HrAdmin")
+//		@Test(enabled = true)
+		public void verify_redirection_AND_LandingPageValue_HrAdmin_OfferApproval() {
+			SoftAssert softAssert = new SoftAssert();
+			try {
+				String actualText = hm.get_LandingPageValue_HrAdmin_OfferApproval();
+				String expectedText = Constants.verify_redirection_AND_LandingPageValue_HrAdmin_OfferApproval;
+				softAssert.assertEquals(actualText, expectedText, Constants.assert_ErrorMessage);
+
+				String actualURL = driver.getCurrentUrl();
+				String expectedURL = prop.getProperty("HomepageURL") + "apps/recruitment/offerApprovalHr/";
+				softAssert.assertEquals(actualURL, expectedURL, Constants.assert_URL_Match_ErrorMessage);
+				softAssert.assertAll();
+			} catch (AssertionError e) {
+				System.err.println("Assertion Error: " + e.getMessage());
+				throw e;
+			}
+		}
+		
+		
+// HIRING - HIRING
+
+				@Test(enabled = false, priority = 10)
+				public void mouseHover_Header_Apps_visibilityCheck_of_Hiring() {
+					String actual = hm.getValue_of_header_apps_Hiring();
+					String expected = Constants.mouseHover_Header_Apps_visibilityCheck_of_Hiring;
+					try {
+						Assert.assertEquals(actual, expected, Constants.assert_ErrorMessage);
+					} catch (AssertionError e) {
+						System.out.println("Assertion Failed! " + e.getMessage());
+						throw e;
+					}
+				}
+				
+				@Test(enabled = false, dependsOnMethods = "mouseHover_Header_Apps_visibilityCheck_of_Hiring")
+//				@Test(enabled = true)
+				public void verify_redirection_AND_LandingPageValue_Hiring_OfferApproval_mg1() {
+					SoftAssert softAssert = new SoftAssert();
+					try {
+						String actualText = hm.get_LandingPageValue_Hiring_OfferApproval_mg1();
+						String expectedText = Constants.verify_redirection_AND_LandingPageValue_Hiring_OfferApproval_common;
+						softAssert.assertEquals(actualText, expectedText, Constants.assert_ErrorMessage);
+
+						String actualURL = driver.getCurrentUrl();
+						String expectedURL = prop.getProperty("HomepageURL") + "apps/recruitment/offerApprovalMgt1/";
+						softAssert.assertEquals(actualURL, expectedURL, Constants.assert_URL_Match_ErrorMessage);
+						softAssert.assertAll();
+					} catch (AssertionError e) {
+						System.err.println("Assertion Error: " + e.getMessage());
+						throw e;
+					}
+				}
+				
+				@Test(enabled = false, dependsOnMethods = "mouseHover_Header_Apps_visibilityCheck_of_Hiring")
+//				@Test(enabled = true)
+				public void verify_redirection_AND_LandingPageValue_Hiring_OfferApproval_mg2() {
+					SoftAssert softAssert = new SoftAssert();
+					try {
+						String actualText = hm.get_LandingPageValue_Hiring_OfferApproval_mg2();
+						String expectedText = Constants.verify_redirection_AND_LandingPageValue_Hiring_OfferApproval_common;
+						softAssert.assertEquals(actualText, expectedText, Constants.assert_ErrorMessage);
+
+						String actualURL = driver.getCurrentUrl();
+						String expectedURL = prop.getProperty("HomepageURL") + "apps/recruitment/offerApprovalMgt2/";
+						softAssert.assertEquals(actualURL, expectedURL, Constants.assert_URL_Match_ErrorMessage);
+						softAssert.assertAll();
+					} catch (AssertionError e) {
+						System.err.println("Assertion Error: " + e.getMessage());
+						throw e;
+					}
+				}
+				@Test(enabled = false, dependsOnMethods = "mouseHover_Header_Apps_visibilityCheck_of_Hiring")
+//				@Test(enabled = true)
+				public void verify_redirection_AND_LandingPageValue_Hiring_OfferApproval_CDO() {
+					SoftAssert softAssert = new SoftAssert();
+					try {
+						String actualText = hm.get_LandingPageValue_Hiring_OfferApproval_cdo();
+						String expectedText = Constants.verify_redirection_AND_LandingPageValue_Hiring_OfferApproval_common;
+						softAssert.assertEquals(actualText, expectedText, Constants.assert_ErrorMessage);
+
+						String actualURL = driver.getCurrentUrl();
+						String expectedURL = prop.getProperty("HomepageURL") + "apps/recruitment/offerApprovalCdo/";
+						softAssert.assertEquals(actualURL, expectedURL, Constants.assert_URL_Match_ErrorMessage);
+						softAssert.assertAll();
+					} catch (AssertionError e) {
+						System.err.println("Assertion Error: " + e.getMessage());
+						throw e;
+					}
+				}
+				@Test(enabled = false, dependsOnMethods = "mouseHover_Header_Apps_visibilityCheck_of_Hiring")
+//				@Test(enabled = true)
+				public void verify_redirection_AND_LandingPageValue_Hiring_JobApproval() {
+					SoftAssert softAssert = new SoftAssert();
+					try {
+						String actualText = hm.get_LandingPageValue_Hiring_JobApproval();
+						String expectedText = Constants.verify_redirection_AND_LandingPageValue_Hiring_JobApproval;
+						softAssert.assertEquals(actualText, expectedText, Constants.assert_ErrorMessage);
+
+						String actualURL = driver.getCurrentUrl();
+						String expectedURL = prop.getProperty("HomepageURL") + "apps/recruitment/jobapproval/";
+						softAssert.assertEquals(actualURL, expectedURL, Constants.assert_URL_Match_ErrorMessage);
+						softAssert.assertAll();
+					} catch (AssertionError e) {
+						System.err.println("Assertion Error: " + e.getMessage());
+						throw e;
+					}
+				}
+	
+		
+// HIRING - RECRUITMENT
+
+				@Test(enabled = false, priority = 11)
+				public void mouseHover_Header_Apps_visibilityCheck_of_Recruitment() {
+					String actual = hm.getValue_of_header_apps_Recruitment();
+					String expected = Constants.mouseHover_Header_Apps_visibilityCheck_of_Recruitment;
+					try {
+						Assert.assertEquals(actual, expected, Constants.assert_ErrorMessage);
+					} catch (AssertionError e) {
+						System.out.println("Assertion Failed! " + e.getMessage());
+						throw e;
+					}
+				}
+				
+				@Test(enabled = false, dependsOnMethods = "mouseHover_Header_Apps_visibilityCheck_of_Recruitment")
+//				@Test(enabled = true)
+				public void verify_redirection_AND_LandingPageValue_Recruitment_Jobs() {
+					SoftAssert softAssert = new SoftAssert();
+					try {
+						String actualText = hm.get_LandingPageValue_Recruitment_Jobs();
+						String expectedText = Constants.verify_redirection_AND_LandingPageValue_Recruitment_Jobs;
+						softAssert.assertEquals(actualText, expectedText, Constants.assert_ErrorMessage);
+
+						String actualURL = driver.getCurrentUrl();
+						String expectedURL = prop.getProperty("HomepageURL") + "apps/recruitment/assignedJobs/";
+						softAssert.assertEquals(actualURL, expectedURL, Constants.assert_URL_Match_ErrorMessage);
+						softAssert.assertAll();
+					} catch (AssertionError e) {
+						System.err.println("Assertion Error: " + e.getMessage());
+						throw e;
+					}
+				}	
+				@Test(enabled = false, dependsOnMethods = "mouseHover_Header_Apps_visibilityCheck_of_Recruitment")
+//				@Test(enabled = true)
+				public void verify_redirection_AND_LandingPageValue_Recruitment_MyCandidates() throws Exception {
+					SoftAssert softAssert = new SoftAssert();
+					try {
+						String actualText = hm.get_LandingPageValue_Recruitment_MyCandidates();
+						String expectedText = Constants.verify_redirection_AND_LandingPageValue_Recruitment_MyCandidates;
+						softAssert.assertEquals(actualText, expectedText, Constants.assert_ErrorMessage);
+						String actualURL = driver.getCurrentUrl();
+						String expectedURL = prop.getProperty("HomepageURL") + "apps/recruitment/myAllCandidates/";
+						softAssert.assertEquals(actualURL, expectedURL, Constants.assert_URL_Match_ErrorMessage);
+						softAssert.assertAll();
+					} catch (AssertionError e) {
+						System.err.println("Assertion Error: " + e.getMessage());
+						throw e;
+					}
+				}	
+		
+// CV BANK
+				@Test(enabled = true, priority = 12)
+				public void mouseHover_Header_Apps_visibilityCheck_of_CvBank() {
+					String actual = hm.getValue_of_header_apps_CvBank();
+					String expected = Constants.mouseHover_Header_Apps_visibilityCheck_of_CvBank;
+					try {
+						Assert.assertEquals(actual, expected, Constants.assert_ErrorMessage);
+					} catch (AssertionError e) {
+						System.out.println("Assertion Failed! " + e.getMessage());
+						throw e;
+					}
+				}
+				
+//				@Test(enabled = false, dependsOnMethods = "mouseHover_Header_Apps_visibilityCheck_of_CvBank")
+				@Test(enabled = true)
+				public void verify_redirection_AND_LandingPageValue_CvBank() {
+					SoftAssert softAssert = new SoftAssert();
+					try {
+						String actualText = hm.get_LandingPageValue_CvBank();
+						String expectedText = Constants.verify_redirection_AND_LandingPageValue_CvBank;
+						softAssert.assertEquals(actualText, expectedText, Constants.assert_ErrorMessage);
+
+						String actualURL = driver.getCurrentUrl();
+						String expectedURL = prop.getProperty("HomepageURL") + "apps/cvBank/";
+						softAssert.assertEquals(actualURL, expectedURL, Constants.assert_URL_Match_ErrorMessage);
+						softAssert.assertAll();
+					} catch (AssertionError e) {
+						System.err.println("Assertion Error: " + e.getMessage());
+						throw e;
+					}
+				}		
+
+				// CV BANK
+				@Test(enabled = true, priority = 13)
+				public void mouseHover_Header_Apps_visibilityCheck_of_Onboarding() {
+					String actual = hm.getValue_of_header_apps_Onboarding();
+					String expected = Constants.mouseHover_Header_Apps_visibilityCheck_of_Onboarding;
+					try {
+						Assert.assertEquals(actual, expected, Constants.assert_ErrorMessage);
+					} catch (AssertionError e) {
+						System.out.println("Assertion Failed! " + e.getMessage());
+						throw e;
+					}
+				}
+				
+//				@Test(enabled = false, dependsOnMethods = "mouseHover_Header_Apps_visibilityCheck_of_Onboarding")
+				@Test(enabled = true)
+				public void verify_redirection_AND_LandingPageValue_Onboarding() {
+					SoftAssert softAssert = new SoftAssert();
+					try {
+						String actualText = hm.get_LandingPageValue_Onboarding();
+						String expectedText = Constants.verify_redirection_AND_LandingPageValue_Onboarding;
+						softAssert.assertEquals(actualText, expectedText, Constants.assert_ErrorMessage);
+
+						String actualURL = driver.getCurrentUrl();
+						String expectedURL = prop.getProperty("HomepageURL") + "apps/onboarding/";
+						softAssert.assertEquals(actualURL, expectedURL, Constants.assert_URL_Match_ErrorMessage);
+						softAssert.assertAll();
+					} catch (AssertionError e) {
+						System.err.println("Assertion Error: " + e.getMessage());
+						throw e;
+					}
+				}		
+		
+		
 }
+

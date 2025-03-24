@@ -2,6 +2,7 @@ package base;
 
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import utils.ScreenshotUtils;
 
 import org.testng.annotations.BeforeMethod;
@@ -45,7 +46,8 @@ public class BaseClass {
       //String browser = prop.getProperty("browser").trim().toLowerCase();
       //boolean headless = Boolean.parseBoolean(prop.getProperty("headless"));
       
-      System.setProperty("webdriver.chrome.driver", "C:\\Users\\Insemi\\Selenium\\chromedriver-win64\\chromedriver.exe");
+      //System.setProperty("webdriver.chrome.driver", "C:\\Users\\Insemi\\Selenium\\chromedriver-win64\\chromedriver.exe");
+      WebDriverManager.chromedriver().setup(); //add dependency also to pom.xml
       ChromeOptions options = new ChromeOptions();
       options.addArguments("--remote-allow-origins=*");
       
@@ -64,6 +66,7 @@ public class BaseClass {
 		if (itestResult.getStatus() == ITestResult.FAILURE) { // for capturing failed screenshots
 			scUT = new ScreenshotUtils();
 			scUT.capture_Screenshot_failures(driver, itestResult.getName());
+			System.out.println("Test Case Failed: " + itestResult.getName()); 
 		}else if(driver != null) {
 			driver.quit();
 			logger.info("Browser closed successfully.");

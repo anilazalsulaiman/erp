@@ -14,7 +14,7 @@ public class HeaderMenu_LC {
 //	@FindBy(css = ":nth-child(2) > :nth-child(1) > .css-mukiy0 > .css-1y19ivf")public WebElement hover_apps;
 	@FindBy(xpath = "//p[normalize-space()='Apps']")
 	public WebElement hover_apps;
-	
+
 //TIMESHEET
 	@FindBy(xpath = "//a[@href='/apps/timesheet/'][1]")
 	public WebElement click_apps_timesheet;
@@ -122,7 +122,7 @@ public class HeaderMenu_LC {
 	public WebElement click_apps_GandR_MyGoals;
 	@FindBy(xpath = "//strong[normalize-space()='Current Year Goals']")
 	public WebElement assert_GandR_MyGoals_Page_title;
-	
+
 	// RATING PENDING
 	@FindBy(xpath = "//a[@href='/apps/GandR/rm/peruserreport/']")
 	public WebElement click_apps_GandR_RatingPending;
@@ -130,21 +130,169 @@ public class HeaderMenu_LC {
 	public WebElement assert_GandR_RatingPending_Page_title_BeforeInitiation;
 	@FindBy(xpath = "//div[normalize-space()='SUBMIT YOUR RATINGS FOR THIS YEAR']")
 	public WebElement assert_GandR_RatingPending_Page_title__AfterInitiation;
-	
 
 	// ADD CUSTOM GOALS
 	@FindBy(xpath = "//a[@href='/apps/GandR/customgoals/']")
 	public WebElement click_apps_GandR_AddCustomGoals;
 	@FindBy(xpath = "//div[@aria-label='Employee ID']")
 	public WebElement assert_GandR_AddCustomGoals_Page_title;
-	
+
 //MY REFERRAL
-		@FindBy(xpath = "(//p[normalize-space()='My Referral'])[1]")
-		public WebElement hover_apps_myreferral;
-		
-		// ADD CUSTOM GOALS
-		@FindBy(xpath = "//a[@href='/apps/referralProgram/employeeReferralProgram/']")
-		public WebElement click_apps_MyReferral_ReferralProgram;
-		@FindBy(xpath = "//h4[normalize-space()='Employee Referral Program']")
-		public WebElement assert_MyReferral_ReferralProgram_Page_title;
+	@FindBy(xpath = "(//p[normalize-space()='My Referral'])[1]")
+	public WebElement hover_apps_myreferral;
+
+	// REFERRAL PROGRAM
+	@FindBy(xpath = "//a[@href='/apps/referralProgram/employeeReferralProgram/']")
+	public WebElement click_apps_MyReferral_ReferralProgram;
+	@FindBy(xpath = "//h4[normalize-space()='Employee Referral Program']")
+	public WebElement assert_MyReferral_ReferralProgram_Page_title;
+
+	// REFERRED LIST
+	@FindBy(xpath = "//a[@href='/apps/referralProgram/referredResumes/']")
+	public WebElement click_apps_MyReferral_ReferredList;
+	@FindBy(xpath = "//h5[normalize-space()='Referred Resumes']")
+	public WebElement assert_MyReferral_ReferredList_Page_title;
+
+//HELPDESK
+	@FindBy(xpath = "(//p[normalize-space()='Help Desk'])[1]")
+	public WebElement hover_apps_Helpdesk;
+	@FindBy(xpath = "//button[normalize-space()='Raise New Ticket']")
+	public WebElement assert_Helpdesk_Page_title;
+
+//EMS
+	@FindBy(xpath = "(//p[normalize-space()='EMS'])[1]")
+	public WebElement hover_apps_EMS;
+	@FindBy(xpath = "//div[@aria-label='EMP ID']")
+	public WebElement assert_EMS_CommonTableValue_Page_title;
+
+	// RESIGNATION LIST
+	@FindBy(xpath = "//a[@href='/apps/ems/resignationList/']")
+	public WebElement click_apps_EMS_resignationList;
+
+	// LWD REQUEST LIST
+	@FindBy(xpath = "//a[@href='/apps/ems/lwdRequestList/']")
+	public WebElement click_apps_EMS_LwdRequestList;
+
+	// RELIEVING CLEARANCE
+	@FindBy(xpath = "//a[@href='/apps/ems/relievingclearance/']")
+	public WebElement click_apps_EMS_Relievingclearance;
+
+	// LETTER APPROVAL
+	@FindBy(xpath = "//a[@href='/apps/ems/letterApproval/']")
+	public WebElement click_apps_EMS_LetterApproval;
+
+	// CLEARANCE ASSIGNMENT
+	@FindBy(xpath = "//a[@href='/apps/ems/clearanceAssignment/']")
+	public WebElement click_apps_EMS_ClearanceAssignment;
+	@FindBy(xpath = "//p[normalize-space()='Clearance Assignment for EMS']")
+	public WebElement assert_EMS_ClearanceAssignment_Page_title;
+
+	// RESIGNATION BEHALF EMPLOYEE
+	@FindBy(xpath = "//a[@href='/apps/ems/resignationBehalfEmployee/']")
+	public WebElement click_apps_EMS_ResignationbehalfEmp;
+	@FindBy(xpath = "//span[normalize-space()='Resignation behalf of employee']")
+	public WebElement assert_EMS_ResignationbehalfEmp_Page_title;
+
+	// TERMINATION
+	@FindBy(xpath = "//a[@href='/apps/ems/terminationRequest/']")
+	public WebElement click_apps_EMS_Termination;
+	@FindBy(xpath = "//span[normalize-space()='Request for Termination']")
+	public WebElement assert_EMS_Termination_Page_title;
+
+	// TERMINATION LIST
+	@FindBy(xpath = "//a[@href='/apps/ems/terminationRequestList/']")
+	public WebElement click_apps_EMS_TerminationList;
+
+	// RESIGNATION
+	@FindBy(xpath = "//a[@href='/apps/ems/resignation/']")
+	public WebElement click_apps_EMS_Resignation;
+	@FindBy(xpath = "//span[normalize-space()='Terms and Conditions']")
+	public WebElement assert_EMS_Resignation_TandC_Popup__Page_title;
+	@FindBy(xpath = "//button[normalize-space()='View terms and conditions']")
+	public WebElement assert_EMS_Resignation_TandC_Button_Page_title;
+	@FindBy(xpath = "//span[normalize-space()='Resignation']")
+	public WebElement assert_EMS_Resignation_homepage_title;
+
+//USERS
+		@FindBy(xpath = "(//p[normalize-space()='Users'])[1]")
+		public WebElement hover_apps_Users;
+		@FindBy(xpath = "//a[@href='/apps/user/list/']")
+		public WebElement click_apps_Users_usersList;
+		@FindBy(xpath = "//span[normalize-space()='Users List']")
+		public WebElement assert_Users_UsersList__title;
+
+//HIRING - HRADMIN
+				@FindBy(xpath = "(//p[normalize-space()='HR Admin'])[1]")
+				public WebElement hover_apps_HRAdmin;
+				
+				//JOBS
+				@FindBy(xpath = "//a[@href='/apps/recruitment/hrAdminJobs/']")
+				public WebElement click_apps_HRAdmin_Jobs;
+				@FindBy(xpath = "//span[normalize-space()='Jobs']")
+				public WebElement  assert_HRAdmin_Jobs_Page_title;
+				
+				//CANDIDATES
+				@FindBy(xpath = "//a[@href='/apps/recruitment/allCandidatesList/']")
+				public WebElement click_apps_HRAdmin_Candidates;
+				@FindBy(xpath = "//span[normalize-space()='My Candidates List']")
+				public WebElement  assert_HRAdmin_Candidates_Page_title;
+				
+				//OFFER APPROVAL
+				@FindBy(xpath = "//a[@href='/apps/recruitment/offerApprovalHr/']")
+				public WebElement click_apps_HRAdmin_OfferApproval;
+				@FindBy(xpath = "//h4[normalize-space()='Approval Requests']")
+				public WebElement  assert_HRAdmin_OfferApproval_Page_title;
+				
+//HIRING - HIRING
+				@FindBy(xpath = "(//p[normalize-space()='Hiring'])[1]")
+				public WebElement hover_apps_Hiring;
+				
+				//OFFER APPROVAL
+				@FindBy(xpath = "//a[@href='/apps/recruitment/offerApprovalMgt1/']")
+				public WebElement click_apps_Hiring_OfferApproval_mg1;
+				@FindBy(xpath = "//a[@href='/apps/recruitment/offerApprovalMgt2/']")
+				public WebElement click_apps_Hiring_OfferApproval_mg2;
+				@FindBy(xpath = "//a[@href='/apps/recruitment/offerApprovalCdo/']")
+				public WebElement click_apps_Hiring_OfferApproval_CDO;
+				@FindBy(xpath = "//h4[normalize-space()='Approval Requests']")
+				public WebElement  assert_Hiring_OfferApproval_Page_title;
+				
+				//JOB APPROVAL
+				@FindBy(xpath = "//a[@href='/apps/recruitment/jobapproval/']")
+				public WebElement click_apps_Hiring_JobApproval;
+				@FindBy(xpath = "//span[normalize-space()='Job Approval']")
+				public WebElement  assert_Hiring_JobApproval_Page_title;
+				
+//HIRING - RECRUITMENT
+				@FindBy(xpath = "(//p[normalize-space()='Recruitment'])[1]")
+				public WebElement hover_apps_Recruitment;
+				
+				//JOBS
+				@FindBy(xpath = "//a[@href='/apps/recruitment/assignedJobs/']")
+				public WebElement click_apps_Recruitment_Jobs;
+				@FindBy(xpath = "//span[normalize-space()='Assigned Jobs']")
+				public WebElement  assert_Recruitment_Jobs_Page_title;
+				
+				//MY CANDIDATES
+				@FindBy(xpath = "//a[@href='/apps/recruitment/myAllCandidates/']")
+				public WebElement click_apps_Recruitment_MyCandidates;
+				@FindBy(xpath = "//span[normalize-space()='My Candidates List']")
+				public WebElement  assert_Recruitment_MyCandidates_Page_title;
+				
+//CV BANK
+				@FindBy(xpath = "(//p[normalize-space()='CV Bank'])[1]")
+				public WebElement hover_apps_CvBank;
+				@FindBy(xpath = "//button[normalize-space()='Search']")
+				public WebElement  assert_CvBank_button_Page_title;
+
+//ONBOARDING
+				@FindBy(xpath = "(//p[normalize-space()='Onboarding'])[1]")
+				public WebElement hover_apps_Onboarding;
+				@FindBy(xpath = "//a[@href='/apps/onboarding/']")
+				public WebElement click_apps_Onboarding;
+				
+				@FindBy(xpath = "//h4[normalize-space()='Onboard Candidates List']")
+				public WebElement  assert_Onboard_Page_title;				
+				
+				
 }

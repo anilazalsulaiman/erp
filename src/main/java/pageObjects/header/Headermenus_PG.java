@@ -344,7 +344,7 @@ public class Headermenus_PG {
 				throw e;
 			}
 		}
-		public String get_LandingPageValue_GandR_ReferralProgram() {
+		public String get_LandingPageValue_MyReferral_ReferralProgram() {
 			try {
 				isHeaderAppVisible();
 				gu.mousehower(driver, locators.hover_apps);
@@ -357,5 +357,419 @@ public class Headermenus_PG {
 				throw e;
 			}
 		}
+		public String get_LandingPageValue_MyReferral_ReferredList() {
+			try {
+				isHeaderAppVisible();
+				gu.mousehower(driver, locators.hover_apps);
+				gu.element_Click(locators.hover_apps_myreferral);
+				gu.element_Click(locators.click_apps_MyReferral_ReferredList);
+				gu.visibility_wait_utility(driver, locators.assert_MyReferral_ReferredList_Page_title);				
+				return gu.getElementText(locators.assert_MyReferral_ReferredList_Page_title);
+			} catch (Exception e) {
+				System.err.println("Failed: " + e.getMessage());
+				throw e;
+			}
+		}
+		
+//HELPDESK
+				public String getValue_of__header_apps_Helpdesk() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						return gu.getElementText(locators.hover_apps_Helpdesk);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+				public String get_LandingPageValue_Helpdesk() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_Helpdesk);
+						gu.visibility_wait_utility(driver, locators.assert_Helpdesk_Page_title);				
+						return gu.getElementText(locators.assert_Helpdesk_Page_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
 
+//EMS
+				public String getValue_of_header_apps_EMS() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						return gu.getElementText(locators.hover_apps_EMS);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+				public String get_LandingPageValue_EMS_resignationList() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_EMS);
+						gu.element_Click(locators.click_apps_EMS_resignationList);
+						gu.visibility_wait_utility(driver, locators.assert_EMS_CommonTableValue_Page_title);				
+						return gu.getElementText(locators.assert_EMS_CommonTableValue_Page_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}	
+				public String get_LandingPageValue_EMS_LwdRequestList() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_EMS);
+						gu.element_Click(locators.click_apps_EMS_LwdRequestList);
+						gu.visibility_wait_utility(driver, locators.assert_EMS_CommonTableValue_Page_title);				
+						return gu.getElementText(locators.assert_EMS_CommonTableValue_Page_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+				public String get_LandingPageValue_EMS_RelievingClearance() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_EMS);
+						gu.element_Click(locators.click_apps_EMS_Relievingclearance);
+						gu.visibility_wait_utility(driver, locators.assert_EMS_CommonTableValue_Page_title);				
+						return gu.getElementText(locators.assert_EMS_CommonTableValue_Page_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+				public String get_LandingPageValue_EMS_LetterApproval() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_EMS);
+						gu.element_Click(locators.click_apps_EMS_LetterApproval);
+						gu.visibility_wait_utility(driver, locators.assert_EMS_CommonTableValue_Page_title);				
+						return gu.getElementText(locators.assert_EMS_CommonTableValue_Page_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+				public String get_LandingPageValue_EMS_ClearanceAssignment() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_EMS);
+						gu.element_Click(locators.click_apps_EMS_ClearanceAssignment);
+						gu.visibility_wait_utility(driver, locators.assert_EMS_ClearanceAssignment_Page_title);				
+						return gu.getElementText(locators.assert_EMS_ClearanceAssignment_Page_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+				public String get_LandingPageValue_EMS_ResignationbehalfEmp() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_EMS);
+						gu.element_Click(locators.click_apps_EMS_ResignationbehalfEmp);
+						gu.visibility_wait_utility(driver, locators.assert_EMS_ResignationbehalfEmp_Page_title);				
+						return gu.getElementText(locators.assert_EMS_ResignationbehalfEmp_Page_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+				
+				public String get_LandingPageValue_EMS_Termination() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_EMS);
+						gu.element_Click(locators.click_apps_EMS_Termination);
+						gu.visibility_wait_utility(driver, locators.assert_EMS_Termination_Page_title);				
+						return gu.getElementText(locators.assert_EMS_Termination_Page_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+				
+				public String get_LandingPageValue_EMS_TerminationList() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_EMS);
+						gu.element_Click(locators.click_apps_EMS_TerminationList);
+						gu.visibility_wait_utility(driver, locators.assert_EMS_CommonTableValue_Page_title);				
+						return gu.getElementText(locators.assert_EMS_CommonTableValue_Page_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+				
+				public String get_LandingPageValue_EMS_Resignation() throws Exception {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_EMS);
+						gu.element_Click(locators.click_apps_EMS_Resignation);
+						if (gu.isElementVisible(driver, locators.assert_EMS_Resignation_TandC_Popup__Page_title)) {
+							Thread.sleep(2000);
+							return gu.getElementText(locators.assert_EMS_Resignation_TandC_Popup__Page_title);
+						} else if (gu.isElementVisible(driver, locators.assert_EMS_Resignation_TandC_Button_Page_title)) {
+							Thread.sleep(2000);
+							return gu.getElementText(locators.assert_EMS_Resignation_TandC_Button_Page_title);
+						} else if (gu.isElementVisible(driver, locators.assert_EMS_Resignation_homepage_title)) {
+							Thread.sleep(2000);
+							return gu.getElementText(locators.assert_EMS_Resignation_homepage_title);
+						} 
+						else {
+							return "UNKNOWN";
+						}
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+				
+//USERS
+				public String getValue_of_header_apps_Users() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						return gu.getElementText(locators.hover_apps_Users);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+				public String get_LandingPageValue_Users_UsersList() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_Users);
+						gu.element_Click(locators.click_apps_Users_usersList);
+						gu.visibility_wait_utility(driver, locators.assert_Users_UsersList__title);				
+						return gu.getElementText(locators.assert_Users_UsersList__title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+				
+				
+//HIRING- HR ADMIN
+				public String getValue_of_header_apps_HrAdmin() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						return gu.getElementText(locators.hover_apps_HRAdmin);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+				public String get_LandingPageValue_HrAdmin_Jobs() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_HRAdmin);
+						gu.element_Click(locators.click_apps_HRAdmin_Jobs);
+						gu.visibility_wait_utility(driver, locators.assert_HRAdmin_Jobs_Page_title);				
+						return gu.getElementText(locators.assert_HRAdmin_Jobs_Page_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+				public String get_LandingPageValue_HrAdmin_Candidates() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_HRAdmin);
+						gu.element_Click(locators.click_apps_HRAdmin_Candidates);
+						gu.visibility_wait_utility(driver, locators.assert_HRAdmin_Candidates_Page_title);				
+						return gu.getElementText(locators.assert_HRAdmin_Candidates_Page_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+				public String get_LandingPageValue_HrAdmin_OfferApproval() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_HRAdmin);
+						gu.element_Click(locators.click_apps_HRAdmin_OfferApproval);
+						gu.visibility_wait_utility(driver, locators.assert_HRAdmin_OfferApproval_Page_title);				
+						return gu.getElementText(locators.assert_HRAdmin_OfferApproval_Page_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+//HIRING- HIRING
+				public String getValue_of_header_apps_Hiring() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						return gu.getElementText(locators.hover_apps_Hiring);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+				
+				public String get_LandingPageValue_Hiring_OfferApproval_mg1() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_Hiring);
+						gu.element_Click(locators.click_apps_Hiring_OfferApproval_mg1);
+						gu.visibility_wait_utility(driver, locators.assert_Hiring_OfferApproval_Page_title);				
+						return gu.getElementText(locators.assert_Hiring_OfferApproval_Page_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+				public String get_LandingPageValue_Hiring_OfferApproval_mg2() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_Hiring);
+						gu.element_Click(locators.click_apps_Hiring_OfferApproval_mg2);
+						gu.visibility_wait_utility(driver, locators.assert_Hiring_OfferApproval_Page_title);				
+						return gu.getElementText(locators.assert_Hiring_OfferApproval_Page_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+				public String get_LandingPageValue_Hiring_OfferApproval_cdo() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_Hiring);
+						gu.element_Click(locators.click_apps_Hiring_OfferApproval_CDO);
+						gu.visibility_wait_utility(driver, locators.assert_Hiring_OfferApproval_Page_title);				
+						return gu.getElementText(locators.assert_Hiring_OfferApproval_Page_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+				public String get_LandingPageValue_Hiring_JobApproval() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_Hiring);
+						gu.element_Click(locators.click_apps_Hiring_JobApproval);
+						gu.visibility_wait_utility(driver, locators.assert_Hiring_JobApproval_Page_title);				
+						return gu.getElementText(locators.assert_Hiring_JobApproval_Page_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+				
+//HIRING- RECRUITMENT
+				public String getValue_of_header_apps_Recruitment() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						return gu.getElementText(locators.hover_apps_Recruitment);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}		
+				
+				public String get_LandingPageValue_Recruitment_Jobs() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_Recruitment);
+						gu.element_Click(locators.click_apps_Recruitment_Jobs);
+						gu.visibility_wait_utility(driver, locators.assert_Recruitment_Jobs_Page_title);				
+						return gu.getElementText(locators.assert_Recruitment_Jobs_Page_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+				public String get_LandingPageValue_Recruitment_MyCandidates() throws Exception {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_Recruitment);
+						Thread.sleep(2000);
+						gu.element_Click(locators.click_apps_Recruitment_MyCandidates);
+						gu.visibility_wait_utility(driver, locators.assert_Recruitment_MyCandidates_Page_title);				
+						return gu.getElementText(locators.assert_Recruitment_MyCandidates_Page_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+				
+//CV BANK
+				public String getValue_of_header_apps_CvBank() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						return gu.getElementText(locators.hover_apps_CvBank);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}		
+				
+				public String get_LandingPageValue_CvBank() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_CvBank);
+						gu.element_Click(locators.hover_apps_CvBank);
+						gu.visibility_wait_utility(driver, locators.assert_CvBank_button_Page_title);				
+						return gu.getElementText(locators.assert_CvBank_button_Page_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+				
+//ONBOARDING
+				public String getValue_of_header_apps_Onboarding() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						return gu.getElementText(locators.hover_apps_Onboarding);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}		
+				
+				public String get_LandingPageValue_Onboarding() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_Onboarding);
+						gu.element_Click(locators.click_apps_Onboarding);
+						gu.visibility_wait_utility(driver, locators.assert_Onboard_Page_title);				
+						return gu.getElementText(locators.assert_Onboard_Page_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}					
+				
+				
 }

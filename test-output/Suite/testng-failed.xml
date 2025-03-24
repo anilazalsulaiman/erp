@@ -8,9 +8,9 @@
     <classes>
       <class name="testcases.Headermenu_TC">
         <methods>
-          <include name="verify_redirection_AND_LandingPageValue_MyReferral_ReferralProgram"/>
           <include name="afterMethod"/>
           <include name="perform_loginFor_QAaccount_allAccess"/>
+          <include name="verify_redirection_AND_LandingPageValue_Recruitment_MyCandidates"/>
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- testcases.Headermenu_TC -->
