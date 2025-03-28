@@ -770,6 +770,402 @@ public class Headermenus_PG {
 						throw e;
 					}
 				}					
+
+
+// TRAVEL 
+				public String getValue_of_header_apps_Travel() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						return gu.getElementText(locators.hover_apps_Travel);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}		
+				
+				public String get_LandingPageValue_travel_Createrequest_Travel() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_Travel);
+						gu.element_Click(locators.hover_apps_Travel_CreateRequest);
+						gu.element_Click(locators.click_apps_Travel_Createrequest_travel);
+						gu.visibility_wait_utility(driver, locators.assert_Travel_Createrequest_travel_Page_title);				
+						return gu.getElementText(locators.assert_Travel_Createrequest_travel_Page_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}	
+				public String get_LandingPageValue_travel_Createrequest_Accomodation() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_Travel);
+						gu.element_Click(locators.hover_apps_Travel_CreateRequest);
+						gu.element_Click(locators.click_apps_Travel_Createrequest_Accomodation);
+						gu.visibility_wait_utility(driver, locators.assert_Travel_Createrequest_Accomodation_Page_title);				
+						return gu.getElementText(locators.assert_Travel_Createrequest_Accomodation_Page_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}	
+				public String get_LandingPageValue_travel_Createrequest_TravelAndAccomodation() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_Travel);
+						gu.element_Click(locators.hover_apps_Travel_CreateRequest);
+						gu.element_Click(locators.click_apps_Travel_Createrequest_TravelAndAccomodation);
+						gu.visibility_wait_utility(driver, locators.assert_Travel_Createrequest_TravelAndAccomodation_Page_title);				
+						return gu.getElementText(locators.assert_Travel_Createrequest_TravelAndAccomodation_Page_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}	
+				public String get_LandingPageValue_travel_MyRequests() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_Travel);
+						gu.element_Click(locators.click_apps_Travel_MyRequests);
+						gu.visibility_wait_utility(driver, locators.assert_Travel_CommonTableValue_Page_title);				
+						return gu.getElementText(locators.assert_Travel_CommonTableValue_Page_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+				public String get_LandingPageValue_travel_ForMyApproval() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_Travel);
+						gu.element_Click(locators.click_apps_Travel_ForMyApproval);
+						gu.visibility_wait_utility(driver, locators.assert_Travel_CommonTableValue_Page_title);				
+						return gu.getElementText(locators.assert_Travel_CommonTableValue_Page_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+				public String get_LandingPageValue_travel_FlightApprovalList() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_Travel);
+						gu.element_Click(locators.click_apps_Travel_FlightApprovalList);
+						gu.visibility_wait_utility(driver, locators.assert_Travel_CommonTableValue_Page_title);				
+						return gu.getElementText(locators.assert_Travel_CommonTableValue_Page_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+				public String get_LandingPageValue_travel_TravelBookingList() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_Travel);
+						gu.element_Click(locators.click_apps_Travel_TravelBookingList);
+						gu.visibility_wait_utility(driver, locators.assert_Travel_CommonTableValue_Page_title);				
+						return gu.getElementText(locators.assert_Travel_CommonTableValue_Page_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+				public String get_LandingPageValue_travel_AccomodationBooking() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_Travel);
+						gu.element_Click(locators.click_apps_Travel_AccommodationBookingList);
+						gu.visibility_wait_utility(driver, locators.assert_Travel_AccommodationBookingList_Page_title);				
+						return gu.getElementText(locators.assert_Travel_AccommodationBookingList_Page_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+				public String get_LandingPageValue_travel_MasterLocation() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_Travel);
+						gu.element_Click(locators.click_apps_Travel_MasterLocation);
+						gu.visibility_wait_utility(driver, locators.assert_Travel_MasterLocation_Page_title);				
+						return gu.getElementText(locators.assert_Travel_MasterLocation_Page_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+				
+// ASSET 
+				public String getValue_of_header_apps_Asset() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						return gu.getElementText(locators.hover_apps_Asset);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}		
+				
+				public String get_LandingPageValue_Asset_ItBuApproval() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_Asset);
+						gu.element_Click(locators.click_apps_Asset_ItBuApproval);
+						gu.visibility_wait_utility(driver, locators.assert_Asset_ItBuApproval_Page_title);				
+						return gu.getElementText(locators.assert_Asset_ItBuApproval_Page_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+				
+				public String get_LandingPageValue_Asset_Assetprocurement() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_Asset);
+						gu.element_Click(locators.click_apps_Asset_Assetprocurement);
+						gu.visibility_wait_utility(driver, locators.assert_Asset_Assetprocurement_title);				
+						return gu.getElementText(locators.assert_Asset_Assetprocurement_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+				
+				public String get_LandingPageValue_Asset_AssetNumberAllocation() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_Asset);
+						gu.element_Click(locators.click_apps_Asset_AssetNumberAllocation);
+						gu.visibility_wait_utility(driver, locators.assert_Asset_AssetNumberAllocation_Page_title);				
+						return gu.getElementText(locators.assert_Asset_AssetNumberAllocation_Page_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+				
+				public String get_LandingPageValue_Asset_AllocationRequest() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_Asset);
+						gu.element_Click(locators.click_apps_Asset_AllocationRequest);
+						gu.visibility_wait_utility(driver, locators.assert_Asset_AllocationRequest_Page_title);				
+						return gu.getElementText(locators.assert_Asset_AllocationRequest_Page_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+				
+				public String get_LandingPageValue_Asset_ReturnAsset() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_Asset);
+						gu.element_Click(locators.click_apps_Asset_ReturnAsset);
+						gu.visibility_wait_utility(driver, locators.assert_Asset_ReturnAsset_Page_title);				
+						return gu.getElementText(locators.assert_Asset_ReturnAsset_Page_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+				
+				public String get_LandingPageValue_Asset_ReplaceAsset() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_Asset);
+						gu.element_Click(locators.click_apps_Asset_ReplaceAsset);
+						gu.visibility_wait_utility(driver, locators.assert_Asset_ReplaceAsset_Page_title);				
+						return gu.getElementText(locators.assert_Asset_ReplaceAsset_Page_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+				
+				
+// L & D 
+				public String getValue_of_header_apps_landD() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						return gu.getElementText(locators.hover_apps_LandD);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}		
+				
+				public String get_LandingPageValue_landD_QuestionSetup() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_LandD);
+						gu.element_Click(locators.click_apps_LandD_QuestionSetup);
+						gu.visibility_wait_utility(driver, locators.assert_LandD_QuestionSetup_Page_title);				
+						return gu.getElementText(locators.assert_LandD_QuestionSetup_Page_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+				
+				public String get_LandingPageValue_landD_AllocationAndEvaluation() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_LandD);
+						gu.element_Click(locators.click_apps_LandD_AllocationAndEvaluation);
+						gu.visibility_wait_utility(driver, locators.assert_LandD_AllocationAndEvaluation_Page_title);				
+						return gu.getElementText(locators.assert_LandD_AllocationAndEvaluation_Page_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+				
+				public String get_LandingPageValue_landD_Reports() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_LandD);
+						gu.element_Click(locators.click_apps_LandD_Reports);
+						gu.visibility_wait_utility(driver, locators.assert_LandD_Reports_Page_title);				
+						return gu.getElementText(locators.assert_LandD_Reports_Page_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+				
+// MANAGER FEEDBACK
+				public String getValue_of_header_apps_ManagerFB() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						return gu.getElementText(locators.hover_apps_ManagerFb);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}		
+				
+				public String get_LandingPageValue_ManagerFB_Admin() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_ManagerFb);
+						gu.element_Click(locators.click_apps_ManagerFb_Admin);
+						gu.visibility_wait_utility(driver, locators.assert_ManagerFb_Admin_Page_title);				
+						return gu.getElementText(locators.assert_ManagerFb_Admin_Page_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}	
+				
+				public String get_LandingPageValue_ManagerFB_AdminView() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_ManagerFb);
+						gu.element_Click(locators.click_apps_ManagerFb_AdminView);
+						gu.visibility_wait_utility(driver, locators.assert_ManagerFb_AdminView_Page_title);				
+						return gu.getElementText(locators.assert_ManagerFb_AdminView_Page_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+				
+				public String get_LandingPageValue_ManagerFB_RmPage() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_ManagerFb);
+						gu.element_Click(locators.click_apps_ManagerFb_RmPage);
+						gu.visibility_wait_utility(driver, locators.assert_ManagerFb_RmPage_Page_title);				
+						return gu.getElementText(locators.assert_ManagerFb_RmPage_Page_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+				
+				public String get_LandingPageValue_ManagerFB_ManagementView() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_ManagerFb);
+						gu.element_Click(locators.click_apps_ManagerFb_ManagementView);
+						gu.visibility_wait_utility(driver, locators.assert_ManagerFb_ManagementView_Page_title);				
+						return gu.getElementText(locators.assert_ManagerFb_ManagementView_Page_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+				
+				public String get_LandingPageValue_ManagerFB_HrHeadView() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_ManagerFb);
+						gu.element_Click(locators.click_apps_ManagerFb_HrHeadView);
+						gu.visibility_wait_utility(driver, locators.assert_ManagerFb_HrHeadView_Page_title);				
+						return gu.getElementText(locators.assert_ManagerFb_HrHeadView_Page_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+				
+				public String get_LandingPageValue_ManagerFB_EmployeeFeedback() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_ManagerFb);
+						gu.element_Click(locators.click_apps_ManagerFb_EmployeeFeedback);
+						gu.visibility_wait_utility(driver, locators.assert_ManagerFb_EmployeeFeedback_Page_title);				
+						return gu.getElementText(locators.assert_ManagerFb_EmployeeFeedback_Page_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+				
+				public String get_LandingPageValue_ManagerFB_BuPage() {
+					try {
+						isHeaderAppVisible();
+						gu.mousehower(driver, locators.hover_apps);
+						gu.element_Click(locators.hover_apps_ManagerFb);
+						gu.element_Click(locators.click_apps_ManagerFb_BuPage);
+						gu.visibility_wait_utility(driver, locators.assert_ManagerFb_BuPage_Page_title);				
+						return gu.getElementText(locators.assert_ManagerFb_BuPage_Page_title);
+					} catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
+				
 				
 				
 }

@@ -39,6 +39,18 @@ public class GeneralUtilities {
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 	
+	public static boolean waitForUrl(WebDriver driver, String expectedURL, long timeoutInSeconds) {
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
+            wait.until(ExpectedConditions.urlToBe(expectedURL));
+            return true;
+        } catch (Exception e) {
+            // Log the exception if needed (e.g., using Log4j)
+            System.err.println("Failed to wait for URL: " + expectedURL + ". Error: " + e.getMessage());
+            return false;
+        }
+    }
+	
 	public void element_Click(WebElement element) {
 		element.click();
 	}

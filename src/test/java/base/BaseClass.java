@@ -47,9 +47,17 @@ public class BaseClass {
       //boolean headless = Boolean.parseBoolean(prop.getProperty("headless"));
       
       //System.setProperty("webdriver.chrome.driver", "C:\\Users\\Insemi\\Selenium\\chromedriver-win64\\chromedriver.exe");
-      WebDriverManager.chromedriver().setup(); //add dependency also to pom.xml
+      WebDriverManager.chromedriver().setup(); //add dependency also to pom.xml, it will automatically update the chrome versions
       ChromeOptions options = new ChromeOptions();
       options.addArguments("--remote-allow-origins=*");
+      
+      boolean isHeadless = Boolean.parseBoolean(prop.getProperty("headless").trim().toLowerCase());
+      if (isHeadless) {
+          // Enable headless mode if specified in the config
+          options.addArguments("--headless");
+          options.addArguments("--disable-gpu");  // Disable GPU for headless mode
+          options.addArguments("--window-size=" + prop.getProperty("viewport.width") + "x" + prop.getProperty("viewport.height"));
+      }
       
 	  driver=new ChromeDriver(options);
 	  driver.get(prop.getProperty("BaseURL"));

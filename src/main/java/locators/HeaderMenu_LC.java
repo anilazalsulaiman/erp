@@ -216,6 +216,7 @@ public class HeaderMenu_LC {
 //USERS
 		@FindBy(xpath = "(//p[normalize-space()='Users'])[1]")
 		public WebElement hover_apps_Users;
+		
 		@FindBy(xpath = "//a[@href='/apps/user/list/']")
 		public WebElement click_apps_Users_usersList;
 		@FindBy(xpath = "//span[normalize-space()='Users List']")
@@ -293,6 +294,166 @@ public class HeaderMenu_LC {
 				
 				@FindBy(xpath = "//h4[normalize-space()='Onboard Candidates List']")
 				public WebElement  assert_Onboard_Page_title;				
+
+// TRAVEL
+				@FindBy(xpath = "(//p[normalize-space()='Travel'])[1]")
+				public WebElement hover_apps_Travel;
+				@FindBy(xpath = "(//p[normalize-space()='Create Request'])[1]")
+				public WebElement hover_apps_Travel_CreateRequest;
+				@FindBy(xpath = "//div[@aria-label='Request Date']")
+				public WebElement assert_Travel_CommonTableValue_Page_title;
 				
+				//CREATE REQUEST - TRAVEL
+				@FindBy(xpath = "//a[@href='/apps/travel/createTravelReservation/']")
+				public WebElement click_apps_Travel_Createrequest_travel;
+				@FindBy(xpath = "//span[normalize-space()='Create Travel Booking']")
+				public WebElement assert_Travel_Createrequest_travel_Page_title;	
 				
+				//CREATE REQUEST - ACCOMODATION
+				@FindBy(xpath = "//a[@href='/apps/travel/accommodation/']")
+				public WebElement click_apps_Travel_Createrequest_Accomodation;
+				@FindBy(xpath = "//span[normalize-space()='Request for Accommodation']")
+				public WebElement assert_Travel_Createrequest_Accomodation_Page_title;	
+				
+				//CREATE REQUEST - TRAVEL & ACCOMODATION
+				@FindBy(xpath = "//a[@href='/apps/travel/createTravelandAccommodation/']")
+				public WebElement click_apps_Travel_Createrequest_TravelAndAccomodation;
+				@FindBy(xpath = "//span[normalize-space()='Create Travel & Accommodation Booking']")
+				public WebElement assert_Travel_Createrequest_TravelAndAccomodation_Page_title;	
+				
+				//MY REQUESTS
+				@FindBy(xpath = "//a[@href='/apps/travel/myrequests/']")
+				public WebElement click_apps_Travel_MyRequests;
+				
+				//FOR MY APPROVAL
+				@FindBy(xpath = "//a[@href='/apps/travel/myapproval/']")
+				public WebElement click_apps_Travel_ForMyApproval;
+				
+				//FLIGHT APPROVAL LIST
+				@FindBy(xpath = "//a[@href='/apps/travel/airticket_approval/']")
+				public WebElement click_apps_Travel_FlightApprovalList;
+				
+				//TRAVEL BOOKING LIST
+				@FindBy(xpath = "//a[@href='/apps/travel/travelbooking/']")
+				public WebElement click_apps_Travel_TravelBookingList;
+				
+				//ACCOMODATION BOOKING
+				@FindBy(xpath = "//a[@href='/apps/travel/accommodationbookinglist/']")
+				public WebElement click_apps_Travel_AccommodationBookingList;
+				@FindBy(xpath = "//div[@aria-label='Created Date']")
+				public WebElement assert_Travel_AccommodationBookingList_Page_title;	
+				
+				//MASTER LOCATION
+				@FindBy(xpath = "//a[@href='/apps/travel/masterlocation/']")
+				public WebElement click_apps_Travel_MasterLocation;
+				@FindBy(xpath = "//div[@aria-label='Airport Name']")
+				public WebElement assert_Travel_MasterLocation_Page_title;	
+				
+// ASSET
+				@FindBy(xpath = "(//p[normalize-space()='Asset'])[1]")
+				public WebElement hover_apps_Asset;
+				
+				//IT BU APPROVAL
+				@FindBy(xpath = "//a[@href='/apps/asset/assetapproval/']")
+				public WebElement click_apps_Asset_ItBuApproval;
+				@FindBy(xpath = "//div[@aria-label='PO Number']")
+				public WebElement assert_Asset_ItBuApproval_Page_title;	
+				
+				//ASSET PROCUREMENT
+				@FindBy(xpath = "//a[@href='/apps/asset/assetproc/']")
+				public WebElement click_apps_Asset_Assetprocurement;
+				@FindBy(xpath = "//span[normalize-space()='Asset Procurement Form']")
+				public WebElement assert_Asset_Assetprocurement_title;	
+				
+				//ASSET NUMBER ALLOCATION
+				@FindBy(xpath = "//a[@href='/apps/asset/noallocation/']")
+				public WebElement click_apps_Asset_AssetNumberAllocation;
+				@FindBy(xpath = "//span[normalize-space()='Asset Number Allocation for Purchased Stocks']")
+				public WebElement assert_Asset_AssetNumberAllocation_Page_title;	
+				
+				//ALLOCATION REQUEST
+				@FindBy(xpath = "//a[@href='/apps/asset/ticket/ticketraise/']")
+				public WebElement click_apps_Asset_AllocationRequest;
+				@FindBy(xpath = "//div[normalize-space()='Raise an allocation request']")
+				public WebElement assert_Asset_AllocationRequest_Page_title;	
+				
+				//RETURN ASSET
+				@FindBy(xpath = "//a[@href='/apps/asset/ticket/assetreturn/']")
+				public WebElement click_apps_Asset_ReturnAsset;
+				@FindBy(xpath = "//button[normalize-space()='Submit']")
+				public WebElement assert_Asset_ReturnAsset_Page_title;	
+				
+				//REPLACE ASSET
+				@FindBy(xpath = "//a[@href='/apps/asset/ticket/assetreplace/']")
+				public WebElement click_apps_Asset_ReplaceAsset;
+				@FindBy(xpath = "//div[normalize-space()='Raise a Replacement request']")
+				public WebElement assert_Asset_ReplaceAsset_Page_title;	
+	
+// L&D
+				@FindBy(xpath = "(//p[normalize-space()='L&D'])[1]")
+				public WebElement hover_apps_LandD;
+				
+				//QUESTION SETUP
+				@FindBy(xpath = "//a[@href='/apps/LandD/question/']")
+				public WebElement click_apps_LandD_QuestionSetup;
+				@FindBy(xpath = "//p[normalize-space()='Topic List']")
+				public WebElement assert_LandD_QuestionSetup_Page_title;	
+				
+				//ALLOCATION AND EVALUATION
+				@FindBy(xpath = "//a[@href='/apps/LandD/allocation/']")
+				public WebElement click_apps_LandD_AllocationAndEvaluation;
+				@FindBy(xpath = "//p[normalize-space()='Allocation & Evaluation']")
+				public WebElement assert_LandD_AllocationAndEvaluation_Page_title;
+				
+				//REPORTS
+				@FindBy(xpath = "//a[@href='/apps/LandD/reports/']")
+				public WebElement click_apps_LandD_Reports;
+				@FindBy(xpath = "//p[normalize-space()='Reports Page']")
+				public WebElement assert_LandD_Reports_Page_title;
+				
+//MANAGER FEEDBACK
+				@FindBy(xpath = "(//p[normalize-space()='Manager Feedback'])[1]")
+				public WebElement hover_apps_ManagerFb;
+				
+				//ADMIN
+				@FindBy(xpath = "//a[@href='/apps/rmreviewparent/admin/admincrtpage/']")
+				public WebElement click_apps_ManagerFb_Admin;	
+				@FindBy(xpath = "//button[normalize-space()='Add']")
+				public WebElement assert_ManagerFb_Admin_Page_title;
+				
+				//ADMIN VIEW
+				@FindBy(xpath = "//a[@href='/apps/rmreviewparent/admin/adminview/']")
+				public WebElement click_apps_ManagerFb_AdminView;
+				@FindBy(xpath = "//h6[normalize-space()='RM Feedback (Admin Page)']")
+				public WebElement assert_ManagerFb_AdminView_Page_title;
+				
+				//RM PAGE
+				@FindBy(xpath = "//a[@href='/apps/rmreviewparent/rmpage/rmpageview/']")
+				public WebElement click_apps_ManagerFb_RmPage;
+				@FindBy(xpath = "//h6[normalize-space()='RM Feedback (RM PAGE)']")
+				public WebElement assert_ManagerFb_RmPage_Page_title;
+				
+				//MANAGEMENT VIEW
+				@FindBy(xpath = "//a[@href='/apps/rmreviewparent/mngmntpage/rmmanagement/']")
+				public WebElement click_apps_ManagerFb_ManagementView;
+				@FindBy(xpath = "//h6[normalize-space()='RM Feedback (Management Page)']")
+				public WebElement assert_ManagerFb_ManagementView_Page_title;
+				
+				//HR HEAD VIEW
+				@FindBy(xpath = "//a[@href='/apps/rmreviewparent/hrheadpage/hrheadview/']")
+				public WebElement click_apps_ManagerFb_HrHeadView;
+				@FindBy(xpath = "//h6[normalize-space()='RM Feedback (Hr head Page)']")
+				public WebElement assert_ManagerFb_HrHeadView_Page_title;
+				
+				//EMPLOYEE FEEDBACK
+				@FindBy(xpath = "//a[@href='/apps/rmreviewparent/userpage/rmuserresponse/']")
+				public WebElement click_apps_ManagerFb_EmployeeFeedback;
+				@FindBy(xpath = "//div[@aria-label='Sno.']")
+				public WebElement assert_ManagerFb_EmployeeFeedback_Page_title;
+				
+				//BU PAGE
+				@FindBy(xpath = "//a[@href='/apps/rmreviewparent/bupage/rmreviewbupage/']")
+				public WebElement click_apps_ManagerFb_BuPage;
+				@FindBy(xpath = "//h6[normalize-space()='RM Feedback (BU PAGE)']")
+				public WebElement assert_ManagerFb_BuPage_Page_title;
 }

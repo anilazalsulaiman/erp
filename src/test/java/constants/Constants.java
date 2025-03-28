@@ -62,5 +62,38 @@ public class Constants {
 				public static final String mouseHover_Header_Apps_visibilityCheck_of_Onboarding = "Onboarding";
 				public static final String verify_redirection_AND_LandingPageValue_Onboarding = "Onboard Candidates List";
 				
+// TRAVEL
+				public static final String mouseHover_Header_Apps_visibilityCheck_of_Travel = "Travel";
+				public static final String verify_redirection_AND_LandingPageValue_Travel_Createrequest_Travel = "Create Travel Booking";
+				public static final String verify_redirection_AND_LandingPageValue_Travel_Createrequest_Accomodation = "Request for Accommodation";
+				public static final String verify_redirection_AND_LandingPageValue_Travel_Createrequest_TravelAndAccomodation = "Create Travel & Accommodation Booking";
+				public static final String verify_redirection_AND_LandingPageValue_Travel_commonTable_value = "REQUEST DATE";
+				public static final String verify_redirection_AND_LandingPageValue_Travel_AccommodationBookingList = "CREATED DATE";
+				public static final String verify_redirection_AND_LandingPageValue_Travel_MasterLocation = "AIRPORT NAME";
+				
+// ASSET
+				public static final String mouseHover_Header_Apps_visibilityCheck_of_Asset = "Asset";
+				public static final String verify_redirection_AND_LandingPageValue_Asset_ItBuApproval = "PO NUMBER";
+				public static final String verify_redirection_AND_LandingPageValue_Asset_Assetprocurement = "Asset Procurement Form";
+				public static final String verify_redirection_AND_LandingPageValue_Asset_AssetNumberAllocation = "Asset Number Allocation for Purchased Stocks";
+				public static final String verify_redirection_AND_LandingPageValue_Asset_AllocationRequest = "Raise an allocation request";
+				public static final String verify_redirection_AND_LandingPageValue_Asset_ReturnAsset = "SUBMIT";
+				public static final String verify_redirection_AND_LandingPageValue_Asset_ReplaceAsset = "Raise a Replacement request";
+			
+// L & D
+				public static final String mouseHover_Header_Apps_visibilityCheck_of_LandD = "L&D";
+				public static final String verify_redirection_AND_LandingPageValue_LandD_QuestionSetup = "Topic List";
+				public static final String verify_redirection_AND_LandingPageValue_LandD_AllocationAndEvaluation = "Allocation & Evaluation";
+				public static final String verify_redirection_AND_LandingPageValue_LandD_Reports = "Reports Page";
+
+// MANAGER FB
+				public static final String mouseHover_Header_Apps_visibilityCheck_of_ManagerFB = "Manager Feedback";
+				public static final String verify_redirection_AND_LandingPageValue_ManagerFB_Admin = "ADD";
+				public static final String verify_redirection_AND_LandingPageValue_ManagerFB_AdminView = "RM Feedback (Admin Page)";
+				public static final String verify_redirection_AND_LandingPageValue_ManagerFB_RmPage = "RM Feedback (RM PAGE)";
+				public static final String verify_redirection_AND_LandingPageValue_ManagerFB_ManagementView = "RM Feedback (Management Page)";
+				public static final String verify_redirection_AND_LandingPageValue_ManagerFB_HrHeadView = "RM Feedback (Hr head Page)";
+				public static final String verify_redirection_AND_LandingPageValue_ManagerFB_EmployeeFeedback = "SNO.";
+				public static final String verify_redirection_AND_LandingPageValue_ManagerFB_BuPage = "RM Feedback (BU PAGE)";
 				
 }
