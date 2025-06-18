@@ -24,6 +24,10 @@ public class Headermenus_PG {
 	public boolean isHeaderAppVisible() {
 		return gu.isElementVisible(driver, locators.hover_apps);
 	}
+	
+	public boolean isHeaderCompanyPolicies_Visible() {
+		return gu.isElementVisible(driver, locators.click_Header_CompanyPolicies);
+	}
 
 	public void mouseHover_header_apps() {
 		try {
@@ -1166,6 +1170,19 @@ public class Headermenus_PG {
 					}
 				}
 				
-				
+
+// COMPANY POLICIES
+				public String get_LandingPageValue_CompanyPolicies() {
+					try{
+						isHeaderCompanyPolicies_Visible();
+						gu.element_Click(locators.click_Header_CompanyPolicies);
+						gu.visibility_wait_utility(driver, locators.assert_CompanyPolicies_Page_title);
+						return gu.getElementText(locators.assert_CompanyPolicies_Page_title);
+					}
+					catch (Exception e) {
+						System.err.println("Failed: " + e.getMessage());
+						throw e;
+					}
+				}
 				
 }

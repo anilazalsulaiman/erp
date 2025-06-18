@@ -1,0 +1,3627 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Extent Report Sample</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Report Summary</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">May 14, 2025 03:34:45 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="skip" href="#"><span>Skip</span><span class="status warning"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="skip" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">mouseHover_Header_Apps_visibilityCheck_of_Timesheet</p>
+            <p class="text-sm">
+              <span>3:35:20 PM</span> / <span>00:00:00:015</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">mouseHover_Header_Apps_visibilityCheck_of_Timesheet</h5>
+<span class='badge badge-success'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-default'>00:00:00:015</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:20 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : mouseHover_Header_Apps_visibilityCheck_of_Timesheet</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_Timesheet</p>
+            <p class="text-sm">
+              <span>3:35:20 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_Timesheet</h5>
+<span class='badge badge-success'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:20 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_Timesheet</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">mouseHover_Header_Apps_visibilityCheck_of_Leaves</p>
+            <p class="text-sm">
+              <span>3:35:20 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">mouseHover_Header_Apps_visibilityCheck_of_Leaves</h5>
+<span class='badge badge-success'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:20 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : mouseHover_Header_Apps_visibilityCheck_of_Leaves</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_ApplyLeaves</p>
+            <p class="text-sm">
+              <span>3:35:20 PM</span> / <span>00:00:00:005</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_ApplyLeaves</h5>
+<span class='badge badge-success'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-default'>00:00:00:005</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:20 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_ApplyLeaves</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_MyLeaveHistory</p>
+            <p class="text-sm">
+              <span>3:35:20 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_MyLeaveHistory</h5>
+<span class='badge badge-success'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:20 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_MyLeaveHistory</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_ForMyApproval</p>
+            <p class="text-sm">
+              <span>3:35:20 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_ForMyApproval</h5>
+<span class='badge badge-success'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:20 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_ForMyApproval</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="7"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">mouseHover_Header_Apps_visibilityCheck_of_GroupChange</p>
+            <p class="text-sm">
+              <span>3:35:20 PM</span> / <span>00:00:00:001</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">mouseHover_Header_Apps_visibilityCheck_of_GroupChange</h5>
+<span class='badge badge-success'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-default'>00:00:00:001</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:20 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : mouseHover_Header_Apps_visibilityCheck_of_GroupChange</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="8"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_GroupChange</p>
+            <p class="text-sm">
+              <span>3:35:20 PM</span> / <span>00:00:00:002</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_GroupChange</h5>
+<span class='badge badge-success'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-default'>00:00:00:002</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:20 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_GroupChange</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="9"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">mouseHover_Header_Apps_visibilityCheck_of_MyBills</p>
+            <p class="text-sm">
+              <span>3:35:20 PM</span> / <span>00:00:00:001</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">mouseHover_Header_Apps_visibilityCheck_of_MyBills</h5>
+<span class='badge badge-success'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-default'>00:00:00:001</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:20 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : mouseHover_Header_Apps_visibilityCheck_of_MyBills</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="10"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_MyBills_CreateNewRequest</p>
+            <p class="text-sm">
+              <span>3:35:20 PM</span> / <span>00:00:00:001</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_MyBills_CreateNewRequest</h5>
+<span class='badge badge-success'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-default'>00:00:00:001</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:20 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_MyBills_CreateNewRequest</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="11"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_MyBills_MyBillsHistory</p>
+            <p class="text-sm">
+              <span>3:35:20 PM</span> / <span>00:00:00:001</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_MyBills_MyBillsHistory</h5>
+<span class='badge badge-success'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-default'>00:00:00:001</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:20 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_MyBills_MyBillsHistory</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="12"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_MyBills_BuApproval</p>
+            <p class="text-sm">
+              <span>3:35:20 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_MyBills_BuApproval</h5>
+<span class='badge badge-success'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:20 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_MyBills_BuApproval</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="13"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_MyBills_BuHistory</p>
+            <p class="text-sm">
+              <span>3:35:20 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_MyBills_BuHistory</h5>
+<span class='badge badge-success'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:20 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_MyBills_BuHistory</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="14"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_MyBills_Category</p>
+            <p class="text-sm">
+              <span>3:35:20 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_MyBills_Category</h5>
+<span class='badge badge-success'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:20 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_MyBills_Category</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="15"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_MyBills_DepartmentApproval</p>
+            <p class="text-sm">
+              <span>3:35:20 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_MyBills_DepartmentApproval</h5>
+<span class='badge badge-success'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:20 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_MyBills_DepartmentApproval</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="16"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_MyBills_DepartmentHistory</p>
+            <p class="text-sm">
+              <span>3:35:20 PM</span> / <span>00:00:00:001</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_MyBills_DepartmentHistory</h5>
+<span class='badge badge-success'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-default'>00:00:00:001</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:20 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_MyBills_DepartmentHistory</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="17"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_MyBills_FinanceApproval</p>
+            <p class="text-sm">
+              <span>3:35:20 PM</span> / <span>00:00:00:002</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_MyBills_FinanceApproval</h5>
+<span class='badge badge-success'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-default'>00:00:00:002</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:20 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_MyBills_FinanceApproval</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="18"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_MyBills_FinanceHistory</p>
+            <p class="text-sm">
+              <span>3:35:20 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_MyBills_FinanceHistory</h5>
+<span class='badge badge-success'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:20 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_MyBills_FinanceHistory</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="19"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">mouseHover_Header_Apps_visibilityCheck_of_GandR</p>
+            <p class="text-sm">
+              <span>3:35:20 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">mouseHover_Header_Apps_visibilityCheck_of_GandR</h5>
+<span class='badge badge-success'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:20 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : mouseHover_Header_Apps_visibilityCheck_of_GandR</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="20"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_GandR_Initiation</p>
+            <p class="text-sm">
+              <span>3:35:20 PM</span> / <span>00:00:00:003</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_GandR_Initiation</h5>
+<span class='badge badge-success'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-default'>00:00:00:003</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:20 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_GandR_Initiation</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="21"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_GandR_MyGoals</p>
+            <p class="text-sm">
+              <span>3:35:20 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_GandR_MyGoals</h5>
+<span class='badge badge-success'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=21</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:20 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_GandR_MyGoals</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="22"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_GandR_RatingPending</p>
+            <p class="text-sm">
+              <span>3:35:20 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_GandR_RatingPending</h5>
+<span class='badge badge-success'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=22</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:20 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_GandR_RatingPending</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="23"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_GandR_AddCustomGoals</p>
+            <p class="text-sm">
+              <span>3:35:20 PM</span> / <span>00:00:00:001</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_GandR_AddCustomGoals</h5>
+<span class='badge badge-success'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-default'>00:00:00:001</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=23</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:20 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_GandR_AddCustomGoals</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="24"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">mouseHover_Header_Apps_visibilityCheck_of_MyReferral</p>
+            <p class="text-sm">
+              <span>3:35:20 PM</span> / <span>00:00:00:001</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">mouseHover_Header_Apps_visibilityCheck_of_MyReferral</h5>
+<span class='badge badge-success'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-default'>00:00:00:001</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=24</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:20 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : mouseHover_Header_Apps_visibilityCheck_of_MyReferral</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="25"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_MyReferral_ReferralProgram</p>
+            <p class="text-sm">
+              <span>3:35:20 PM</span> / <span>00:00:00:001</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_MyReferral_ReferralProgram</h5>
+<span class='badge badge-success'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-default'>00:00:00:001</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=25</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:20 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_MyReferral_ReferralProgram</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="26"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_MyReferral_ReferredList</p>
+            <p class="text-sm">
+              <span>3:35:20 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_MyReferral_ReferredList</h5>
+<span class='badge badge-success'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=26</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:20 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_MyReferral_ReferredList</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="27"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">mouseHover_Header_Apps_visibilityCheck_of_Helpdesk</p>
+            <p class="text-sm">
+              <span>3:35:20 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">mouseHover_Header_Apps_visibilityCheck_of_Helpdesk</h5>
+<span class='badge badge-success'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=27</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:20 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : mouseHover_Header_Apps_visibilityCheck_of_Helpdesk</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="28"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_Helpdesk</p>
+            <p class="text-sm">
+              <span>3:35:20 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_Helpdesk</h5>
+<span class='badge badge-success'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=28</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:20 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_Helpdesk</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="29"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">mouseHover_Header_Apps_visibilityCheck_of_EMS</p>
+            <p class="text-sm">
+              <span>3:35:20 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">mouseHover_Header_Apps_visibilityCheck_of_EMS</h5>
+<span class='badge badge-success'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=29</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:20 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : mouseHover_Header_Apps_visibilityCheck_of_EMS</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="30"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_EMS_resignationList</p>
+            <p class="text-sm">
+              <span>3:35:20 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_EMS_resignationList</h5>
+<span class='badge badge-success'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=30</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:20 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_EMS_resignationList</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="31"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_EMS_LwdRequestList</p>
+            <p class="text-sm">
+              <span>3:35:20 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_EMS_LwdRequestList</h5>
+<span class='badge badge-success'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:20 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=31</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:20 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_EMS_LwdRequestList</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="32"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_EMS_RelievingClearance</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:001</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_EMS_RelievingClearance</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:001</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=32</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_EMS_RelievingClearance</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="33"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_EMS_LetterApproval</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_EMS_LetterApproval</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=33</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_EMS_LetterApproval</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="34"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_EMS_ClearanceAssignment</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_EMS_ClearanceAssignment</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=34</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_EMS_ClearanceAssignment</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="35"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_EMS_ResignationbehalfEmp</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:001</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_EMS_ResignationbehalfEmp</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:001</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=35</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_EMS_ResignationbehalfEmp</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="36"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_EMS_Termination</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_EMS_Termination</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=36</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_EMS_Termination</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="37"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_EMS_TerminationList</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_EMS_TerminationList</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=37</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_EMS_TerminationList</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="38"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_EMS_Resignation</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_EMS_Resignation</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=38</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_EMS_Resignation</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="39"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">mouseHover_Header_Apps_visibilityCheck_of_Users</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">mouseHover_Header_Apps_visibilityCheck_of_Users</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=39</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : mouseHover_Header_Apps_visibilityCheck_of_Users</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="40"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_Users_UsersList</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_Users_UsersList</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=40</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_Users_UsersList</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="41"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">mouseHover_Header_Apps_visibilityCheck_of_HrAdmin</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">mouseHover_Header_Apps_visibilityCheck_of_HrAdmin</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=41</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : mouseHover_Header_Apps_visibilityCheck_of_HrAdmin</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="42"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_HrAdmin_Jobs</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_HrAdmin_Jobs</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=42</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_HrAdmin_Jobs</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="43"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_HrAdmin_Candidates</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_HrAdmin_Candidates</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=43</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_HrAdmin_Candidates</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="44"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_HrAdmin_OfferApproval</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:001</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_HrAdmin_OfferApproval</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:001</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=44</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_HrAdmin_OfferApproval</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="45"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">mouseHover_Header_Apps_visibilityCheck_of_Hiring</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:003</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">mouseHover_Header_Apps_visibilityCheck_of_Hiring</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:003</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=45</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : mouseHover_Header_Apps_visibilityCheck_of_Hiring</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="46"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_Hiring_OfferApproval_mg1</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_Hiring_OfferApproval_mg1</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=46</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_Hiring_OfferApproval_mg1</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="47"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_Hiring_OfferApproval_mg2</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_Hiring_OfferApproval_mg2</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=47</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_Hiring_OfferApproval_mg2</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="48"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_Hiring_OfferApproval_CDO</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_Hiring_OfferApproval_CDO</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=48</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_Hiring_OfferApproval_CDO</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="49"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_Hiring_JobApproval</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_Hiring_JobApproval</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=49</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_Hiring_JobApproval</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="50"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">mouseHover_Header_Apps_visibilityCheck_of_Recruitment</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">mouseHover_Header_Apps_visibilityCheck_of_Recruitment</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=50</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : mouseHover_Header_Apps_visibilityCheck_of_Recruitment</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="51"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_Recruitment_Jobs</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_Recruitment_Jobs</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=51</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_Recruitment_Jobs</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="52"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_Recruitment_MyCandidates</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_Recruitment_MyCandidates</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=52</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_Recruitment_MyCandidates</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="53"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">mouseHover_Header_Apps_visibilityCheck_of_CvBank</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">mouseHover_Header_Apps_visibilityCheck_of_CvBank</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=53</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : mouseHover_Header_Apps_visibilityCheck_of_CvBank</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="54"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_CvBank</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:006</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_CvBank</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:006</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=54</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_CvBank</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="55"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">mouseHover_Header_Apps_visibilityCheck_of_Onboarding</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:001</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">mouseHover_Header_Apps_visibilityCheck_of_Onboarding</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:001</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=55</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : mouseHover_Header_Apps_visibilityCheck_of_Onboarding</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="56"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_Onboarding</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:002</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_Onboarding</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:002</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=56</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_Onboarding</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="57"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">mouseHover_Header_Apps_visibilityCheck_of_Travel</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:002</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">mouseHover_Header_Apps_visibilityCheck_of_Travel</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:002</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=57</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : mouseHover_Header_Apps_visibilityCheck_of_Travel</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="58"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_Travel_Createrequest_Travel</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_Travel_Createrequest_Travel</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=58</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_Travel_Createrequest_Travel</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="59"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_Travel_Createrequest_Accomodation</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:001</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_Travel_Createrequest_Accomodation</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:001</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=59</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_Travel_Createrequest_Accomodation</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="60"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_Travel_Createrequest_TravelAndAccomodation</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_Travel_Createrequest_TravelAndAccomodation</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=60</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_Travel_Createrequest_TravelAndAccomodation</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="61"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_Travel_Myrequests</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:002</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_Travel_Myrequests</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:002</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=61</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_Travel_Myrequests</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="62"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_Travel_ForMyApproval</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:003</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_Travel_ForMyApproval</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:003</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=62</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_Travel_ForMyApproval</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="63"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_Travel_FlightApprovalList</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_Travel_FlightApprovalList</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=63</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_Travel_FlightApprovalList</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="64"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_Travel_TravelBookingList</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_Travel_TravelBookingList</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=64</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_Travel_TravelBookingList</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="65"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_Travel_AccommodationBooking</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_Travel_AccommodationBooking</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=65</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_Travel_AccommodationBooking</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="66"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_Travel_MasterLocation</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_Travel_MasterLocation</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=66</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_Travel_MasterLocation</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="67"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">mouseHover_Header_Apps_visibilityCheck_of_Asset</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">mouseHover_Header_Apps_visibilityCheck_of_Asset</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=67</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : mouseHover_Header_Apps_visibilityCheck_of_Asset</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="68"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_Asset_ItBuApproval</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_Asset_ItBuApproval</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=68</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_Asset_ItBuApproval</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="69"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_Asset_Assetprocurement</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:001</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_Asset_Assetprocurement</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:001</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=69</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_Asset_Assetprocurement</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="70"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_Asset_AssetNumberAllocation</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_Asset_AssetNumberAllocation</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=70</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_Asset_AssetNumberAllocation</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="71"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_Asset_AllocationRequest</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_Asset_AllocationRequest</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=71</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_Asset_AllocationRequest</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="72"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_Asset_ReturnAsset</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_Asset_ReturnAsset</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=72</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_Asset_ReturnAsset</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="73"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_Asset_ReplaceAsset</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:001</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_Asset_ReplaceAsset</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:001</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=73</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_Asset_ReplaceAsset</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="74"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">mouseHover_Header_Apps_visibilityCheck_of_LandD</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">mouseHover_Header_Apps_visibilityCheck_of_LandD</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=74</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : mouseHover_Header_Apps_visibilityCheck_of_LandD</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="75"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_LandD_QuestionSetup</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_LandD_QuestionSetup</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=75</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_LandD_QuestionSetup</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="76"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_LandD_AllocationAndEvaluation</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_LandD_AllocationAndEvaluation</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=76</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_LandD_AllocationAndEvaluation</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="77"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_LandD_Reports</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_LandD_Reports</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=77</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_LandD_Reports</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="78"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">mouseHover_Header_Apps_visibilityCheck_of_ManagerFB</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">mouseHover_Header_Apps_visibilityCheck_of_ManagerFB</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=78</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : mouseHover_Header_Apps_visibilityCheck_of_ManagerFB</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="79"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_ManagerFB_Admin</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_ManagerFB_Admin</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=79</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_ManagerFB_Admin</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="80"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_ManagerFB_AdminView</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_ManagerFB_AdminView</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=80</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_ManagerFB_AdminView</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="81"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_ManagerFB_RmPage</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_ManagerFB_RmPage</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=81</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_ManagerFB_RmPage</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="82"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_ManagerFB_ManagementView</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_ManagerFB_ManagementView</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=82</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_ManagerFB_ManagementView</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="83"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_ManagerFB_HrHeadView</p>
+            <p class="text-sm">
+              <span>3:35:21 PM</span> / <span>00:00:00:001</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_ManagerFB_HrHeadView</h5>
+<span class='badge badge-success'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:21 PM</span>
+<span class='badge badge-default'>00:00:00:001</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=83</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:21 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_ManagerFB_HrHeadView</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="84"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_ManagerFB_EmployeeFeedback</p>
+            <p class="text-sm">
+              <span>3:35:22 PM</span> / <span>00:00:00:002</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_ManagerFB_EmployeeFeedback</h5>
+<span class='badge badge-success'>05.14.2025 3:35:22 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:22 PM</span>
+<span class='badge badge-default'>00:00:00:002</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=84</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:22 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_ManagerFB_EmployeeFeedback</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="85"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_redirection_AND_LandingPageValue_ManagerFB_BuPage</p>
+            <p class="text-sm">
+              <span>3:35:22 PM</span> / <span>00:00:00:004</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verify_redirection_AND_LandingPageValue_ManagerFB_BuPage</h5>
+<span class='badge badge-success'>05.14.2025 3:35:22 PM</span>
+<span class='badge badge-danger'>05.14.2025 3:35:22 PM</span>
+<span class='badge badge-default'>00:00:00:004</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=85</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>3:35:22 PM</td>
+        <td>
+          <span class='badge white-text yellow'>Name of the skipped test case is : verify_redirection_AND_LandingPageValue_ManagerFB_BuPage</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>May 14, 2025 03:34:45 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>May 14, 2025 03:35:22 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> tests failed,
+<b>85</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> events failed,
+<b data-tooltip='%'>85</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"mouseHover_Header_Apps_visibilityCheck_of_Timesheet":0.015,"verify_redirection_AND_LandingPageValue_Timesheet":0,"mouseHover_Header_Apps_visibilityCheck_of_Leaves":0,"verify_redirection_AND_LandingPageValue_ApplyLeaves":0.005,"verify_redirection_AND_LandingPageValue_MyLeaveHistory":0,"verify_redirection_AND_LandingPageValue_ForMyApproval":0,"mouseHover_Header_Apps_visibilityCheck_of_GroupChange":0.001,"verify_redirection_AND_LandingPageValue_GroupChange":0.002,"mouseHover_Header_Apps_visibilityCheck_of_MyBills":0.001,"verify_redirection_AND_LandingPageValue_MyBills_CreateNewRequest":0.001,"verify_redirection_AND_LandingPageValue_MyBills_MyBillsHistory":0.001,"verify_redirection_AND_LandingPageValue_MyBills_BuApproval":0,"verify_redirection_AND_LandingPageValue_MyBills_BuHistory":0,"verify_redirection_AND_LandingPageValue_MyBills_Category":0,"verify_redirection_AND_LandingPageValue_MyBills_DepartmentApproval":0,"verify_redirection_AND_LandingPageValue_MyBills_DepartmentHistory":0.001,"verify_redirection_AND_LandingPageValue_MyBills_FinanceApproval":0.002,"verify_redirection_AND_LandingPageValue_MyBills_FinanceHistory":0,"mouseHover_Header_Apps_visibilityCheck_of_GandR":0,"verify_redirection_AND_LandingPageValue_GandR_Initiation":0.003,"verify_redirection_AND_LandingPageValue_GandR_MyGoals":0,"verify_redirection_AND_LandingPageValue_GandR_RatingPending":0,"verify_redirection_AND_LandingPageValue_GandR_AddCustomGoals":0.001,"mouseHover_Header_Apps_visibilityCheck_of_MyReferral":0.001,"verify_redirection_AND_LandingPageValue_MyReferral_ReferralProgram":0.001,"verify_redirection_AND_LandingPageValue_MyReferral_ReferredList":0,"mouseHover_Header_Apps_visibilityCheck_of_Helpdesk":0,"verify_redirection_AND_LandingPageValue_Helpdesk":0,"mouseHover_Header_Apps_visibilityCheck_of_EMS":0,"verify_redirection_AND_LandingPageValue_EMS_resignationList":0,"verify_redirection_AND_LandingPageValue_EMS_LwdRequestList":0,"verify_redirection_AND_LandingPageValue_EMS_RelievingClearance":0.001,"verify_redirection_AND_LandingPageValue_EMS_LetterApproval":0,"verify_redirection_AND_LandingPageValue_EMS_ClearanceAssignment":0,"verify_redirection_AND_LandingPageValue_EMS_ResignationbehalfEmp":0.001,"verify_redirection_AND_LandingPageValue_EMS_Termination":0,"verify_redirection_AND_LandingPageValue_EMS_TerminationList":0,"verify_redirection_AND_LandingPageValue_EMS_Resignation":0,"mouseHover_Header_Apps_visibilityCheck_of_Users":0,"verify_redirection_AND_LandingPageValue_Users_UsersList":0,"mouseHover_Header_Apps_visibilityCheck_of_HrAdmin":0,"verify_redirection_AND_LandingPageValue_HrAdmin_Jobs":0,"verify_redirection_AND_LandingPageValue_HrAdmin_Candidates":0,"verify_redirection_AND_LandingPageValue_HrAdmin_OfferApproval":0.001,"mouseHover_Header_Apps_visibilityCheck_of_Hiring":0.003,"verify_redirection_AND_LandingPageValue_Hiring_OfferApproval_mg1":0,"verify_redirection_AND_LandingPageValue_Hiring_OfferApproval_mg2":0,"verify_redirection_AND_LandingPageValue_Hiring_OfferApproval_CDO":0,"verify_redirection_AND_LandingPageValue_Hiring_JobApproval":0,"mouseHover_Header_Apps_visibilityCheck_of_Recruitment":0,"verify_redirection_AND_LandingPageValue_Recruitment_Jobs":0,"verify_redirection_AND_LandingPageValue_Recruitment_MyCandidates":0,"mouseHover_Header_Apps_visibilityCheck_of_CvBank":0,"verify_redirection_AND_LandingPageValue_CvBank":0.006,"mouseHover_Header_Apps_visibilityCheck_of_Onboarding":0.001,"verify_redirection_AND_LandingPageValue_Onboarding":0.002,"mouseHover_Header_Apps_visibilityCheck_of_Travel":0.002,"verify_redirection_AND_LandingPageValue_Travel_Createrequest_Travel":0,"verify_redirection_AND_LandingPageValue_Travel_Createrequest_Accomodation":0.001,"verify_redirection_AND_LandingPageValue_Travel_Createrequest_TravelAndAccomodation":0,"verify_redirection_AND_LandingPageValue_Travel_Myrequests":0.002,"verify_redirection_AND_LandingPageValue_Travel_ForMyApproval":0.003,"verify_redirection_AND_LandingPageValue_Travel_FlightApprovalList":0,"verify_redirection_AND_LandingPageValue_Travel_TravelBookingList":0,"verify_redirection_AND_LandingPageValue_Travel_AccommodationBooking":0,"verify_redirection_AND_LandingPageValue_Travel_MasterLocation":0,"mouseHover_Header_Apps_visibilityCheck_of_Asset":0,"verify_redirection_AND_LandingPageValue_Asset_ItBuApproval":0,"verify_redirection_AND_LandingPageValue_Asset_Assetprocurement":0.001,"verify_redirection_AND_LandingPageValue_Asset_AssetNumberAllocation":0,"verify_redirection_AND_LandingPageValue_Asset_AllocationRequest":0,"verify_redirection_AND_LandingPageValue_Asset_ReturnAsset":0,"verify_redirection_AND_LandingPageValue_Asset_ReplaceAsset":0.001,"mouseHover_Header_Apps_visibilityCheck_of_LandD":0,"verify_redirection_AND_LandingPageValue_LandD_QuestionSetup":0,"verify_redirection_AND_LandingPageValue_LandD_AllocationAndEvaluation":0,"verify_redirection_AND_LandingPageValue_LandD_Reports":0,"mouseHover_Header_Apps_visibilityCheck_of_ManagerFB":0,"verify_redirection_AND_LandingPageValue_ManagerFB_Admin":0,"verify_redirection_AND_LandingPageValue_ManagerFB_AdminView":0,"verify_redirection_AND_LandingPageValue_ManagerFB_RmPage":0,"verify_redirection_AND_LandingPageValue_ManagerFB_ManagementView":0,"verify_redirection_AND_LandingPageValue_ManagerFB_HrHeadView":0.001,"verify_redirection_AND_LandingPageValue_ManagerFB_EmployeeFeedback":0.002,"verify_redirection_AND_LandingPageValue_ManagerFB_BuPage":0.004
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>PC Name</td>
+<td>Anilaz</td>
+</tr>
+<tr>
+<td>OS</td>
+<td>Windows 10</td>
+</tr>
+<tr>
+<td>Browser</td>
+<td>Chrome</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 0,
+warningParent: 0,
+skipParent: 85,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 0,
+failEvents: 0,
+warningEvents: 0,
+skipEvents: 85,
+infoEvents: 0
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

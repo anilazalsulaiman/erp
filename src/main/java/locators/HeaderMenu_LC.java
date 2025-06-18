@@ -10,8 +10,7 @@ public class HeaderMenu_LC {
 	public HeaderMenu_LC(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
-
-//	@FindBy(css = ":nth-child(2) > :nth-child(1) > .css-mukiy0 > .css-1y19ivf")public WebElement hover_apps;
+//APPS
 	@FindBy(xpath = "//p[normalize-space()='Apps']")
 	public WebElement hover_apps;
 
@@ -107,7 +106,7 @@ public class HeaderMenu_LC {
 	@FindBy(xpath = "//span[normalize-space()='FINANCE HISTORY']")
 	public WebElement assert_FinHistory_Page_title;
 
-//MY BILLS
+//G&R
 	@FindBy(xpath = "(//p[normalize-space()='Goals and Reviews'])[1]")
 	public WebElement hover_apps_GandR;
 
@@ -456,4 +455,52 @@ public class HeaderMenu_LC {
 				public WebElement click_apps_ManagerFb_BuPage;
 				@FindBy(xpath = "//h6[normalize-space()='RM Feedback (BU PAGE)']")
 				public WebElement assert_ManagerFb_BuPage_Page_title;
+	
+				
+				
+				
+				
+				//***********HEADERS***********//
+//COMPANY POLICIES
+				@FindBy(xpath = "//a[@href='/apps/companyPolicies/']")
+				public WebElement click_Header_CompanyPolicies;
+				@FindBy(xpath = "//label[normalize-space()='Search Policy']")
+				public WebElement assert_CompanyPolicies_Page_title;
+				
+//TIMESHEET
+				@FindBy(xpath = "(//a[@href='/apps/timesheet/'])[2]")
+				public WebElement click_Header_timesheet;	
+				
+//HELPDESK
+				@FindBy(xpath = "(//p[normalize-space()='Help Desk'])[2]")
+				public WebElement hover_Header_Helpdesk;
+		
+				//******************************//
+				
+//REPORTS
+				@FindBy(xpath = "(//p[normalize-space()='Reports'])[2]")
+				public WebElement hover_Reports;
+				
+				@FindBy(xpath = "(//p[normalize-space()='Time Sheet'])[3]")
+				public WebElement hover_Reports_Timesheet;
+				
+//REPORTS - TIMESHEET - OVERALL REPORT 
+				@FindBy(xpath = "//a[@href='/reports/overAllReport/'][1]")
+				public WebElement click_Reports_Timesheet_OverallReport;	
+				@FindBy(xpath = "//p[normalize-space()='Topic List']")
+				public WebElement assert_Reports_Timesheet_OverallReport_Page_title;
+				
+//REPORTS - TIMESHEET - BU REPORT
+				@FindBy(xpath = "(//p[normalize-space()='L&D'])[1]")
+				public WebElement click_Reports_Timesheet_BuReport;	
+				@FindBy(xpath = "//p[normalize-space()='Topic List']")
+				public WebElement assert_Reports_Timesheet_BuReport_Page_title;
+				
+////REPORTS - TIMESHEET - REPORTEES REPORT
+				@FindBy(xpath = "//a[@href='/apps/LandD/question/']")
+				public WebElement click_Reports_Timesheet_ReporteesReport;
+				@FindBy(xpath = "//p[normalize-space()='Topic List']")
+				public WebElement assert_Reports_Timesheet_ReporteesReport_Page_title;				
+
+				
 }
